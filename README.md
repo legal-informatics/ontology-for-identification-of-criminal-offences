@@ -8,4 +8,4 @@ This ontology is designed to model legal provisions, offences, and reasoning pro
 
 - Numerical and descriptive attributes, e.g., `ukupnaVrednost` (*totalValue*), `pokušaj` (*attempt*).
 
-- SWRL rules that encode legal reasoning and chaining conditions such as inferring the final recommended punishment (`konačnoPreporučeno` (*finalRecommended*)) based on assessed penalties and determining the applicable legal article based on offence elements.
+- SWRL rules that encode legal reasoning and chaining conditions such as inferring the final recommended punishment `konačnoPreporučeno` (*ruleBasedInffered*) based on assessed penalties and determining the applicable legal article based on offence elements.
