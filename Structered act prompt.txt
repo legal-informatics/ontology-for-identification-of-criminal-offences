@@ -1,0 +1,331 @@
+ZADATAK:
+Na osnovu ulaznih faktora (OSNOVNA RADNJA, PREDMET DELA, INTERAKCIJA SA ŽRTVOM, NAČIN IZVRŠENJA, OKOLNOSTI, NAMERA, VREDNOST / ŠTETA, POSLEDICE, POKUŠAJ)
+utvrdi koji član, stav i tačka Krivičnog zakonika je prekršen. Navedeni su faktori za svaki član u uglastim zagradama. Ukoliko se atributi na ulazu nalaze u članu, smatraj to pozitivnim poklapanjem.
+Član, stav i tačka su prikazani u formatu: član-stav-tačka u row_id redu. Zakon je predstavljen na sledeći način:
+
+{
+  "results": [
+    {
+      "row_id": "239-1",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar", "električna energija"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
+    },
+    {
+      "row_id": "239-2",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar", "električna energija"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "POKUŠAJ": ["da"]
+    },
+    {
+      "row_id": "240-1-1",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "NAČIN IZVRŠENJA": ["obijanje/provala uz silu"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
+    },
+    {
+      "row_id": "240-1-2",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "OKOLNOSTI": ["organizovana grupa"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
+    },
+    {
+      "row_id": "240-1-3",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "OKOLNOSTI": ["drzak ili opasan način"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
+    },
+    {
+      "row_id": "240-1-4",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "OKOLNOSTI": ["naoružan"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
+    },
+    {
+      "row_id": "240-1-5",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "OKOLNOSTI": ["požar/poplava"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
+    },
+    {
+      "row_id": "240-1-6",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "OKOLNOSTI": ["bespomoćnost žrtve"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
+    },
+    {
+      "row_id": "240-2",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar", "kulturno ili prirodno dobro"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "VREDNOST / ŠTETA": ["3.000 € - 30.000 €"]
+    },
+    {
+      "row_id": "240-3",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar", "kulturno ili prirodno dobro"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "VREDNOST / ŠTETA": ["> 30.000 €"]
+    },
+    {
+      "row_id": "241-1",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrbljena sila posle oduzimanja"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
+    },
+    {
+      "row_id": "241-2",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrbljena sila posle oduzimanja"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "VREDNOST / ŠTETA": ["3.000 € - 30.000 €"]
+    },
+    {
+      "row_id": "241-3",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrbljena sila posle oduzimanja"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "VREDNOST / ŠTETA": ["> 30.000 €"]
+    },
+    {
+      "row_id": "241-4",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrbljena sila posle oduzimanja"],
+      "OKOLNOSTI": ["organizovana grupa", "teška telesna povreda"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
+    },
+    {
+      "row_id": "241-5",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrbljena sila: posle oduzimanja"],
+      "OKOLNOSTI": ["lišavanje života"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "POSLEDICE": ["smrt"]
+    },
+    {
+      "row_id": "241-6",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrbljena sila posle oduzimanja"],
+      "NAMERA": ["pribavljanje male imovinske koristi"],
+      "VREDNOST / ŠTETA": ["manje od 150 €"]
+    },
+    {
+      "row_id": "242-1",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM ": ["upotrbljena sila pre oduzimanja"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
+    },
+    {
+      "row_id": "242-2",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM ": ["upotrbljena sila pre oduzimanja"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "VREDNOST / ŠTETA": ["3.000 € - 30.000 €"]
+    },
+    {
+      "row_id": "242-3",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM ": ["upotrbljena sila pre oduzimanja"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "VREDNOST / ŠTETA": ["> 30.000 €"]
+    },
+    {
+      "row_id": "242-4",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM ": ["upotrbljena sila pre oduzimanja"],
+      "OKOLNOSTI": ["organizovana grupa", "teška telesna povreda"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
+    },
+    {
+      "row_id": "242-5",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM ": ["upotrbljena sila pre oduzimanja"],
+      "OKOLNOSTI": ["lišavanje života"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "POSLEDICE": ["smrt"]
+    },
+    {
+      "row_id": "242-6",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM ": ["upotrbljena sila pre oduzimanja"],
+      "NAMERA": ["pribavljanje male imovinske koristi"],
+      "VREDNOST / ŠTETA": ["manje od 150 €"],
+      "POKUŠAJ": ["da"]
+    },
+    {
+      "row_id": "244-1",
+      "OSNOVNA RADNJA": ["dovođenje u zabludu / održavanje u zabludi"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
+    },
+    {
+      "row_id": "244-2",
+      "OSNOVNA RADNJA": ["dovođenje u zabludu / održavanje u zabludi"],
+      "NAMERA": ["nanošenje štete"]
+    },
+    {
+      "row_id": "244-3",
+      "OSNOVNA RADNJA": ["dovođenje u zabludu / održavanje u zabludi"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "VREDNOST / ŠTETA": ["3.000 € - 30.000 €"]
+    },
+    {
+      "row_id": "244-4",
+      "OSNOVNA RADNJA": ["dovođenje u zabludu / održavanje u zabludi"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "VREDNOST / ŠTETA": ["> 30.000 €"]
+    },
+    {
+      "row_id": "246-1",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "NAMERA": ["pribavljanje male imovinske koristi"],
+      "VREDNOST / ŠTETA": ["manje od 150 €"]
+    },
+    {
+      "row_id": "247-1",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "NAMERA": ["bez namere pribavljanja koristi"]
+    },
+    {
+      "row_id": "247-2",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "NAMERA": ["bez namere pribavljanja koristi"],
+      "VREDNOST / ŠTETA": ["3.000 € - 30.000 €"]
+    },
+    {
+      "row_id": "247-3",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "NAMERA": ["bez namere pribavljanja koristi"],
+      "VREDNOST / ŠTETA": ["> 30.000 €"]
+    },
+    {
+      "row_id": "248-1",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["motorno vozilo"],
+      "NAMERA": ["upotreba za vožnju"]
+    },
+    {
+      "row_id": "248-2",
+      "OSNOVNA RADNJA": ["oduzimanje stvari"],
+      "PREDMET DELA": ["motorno vozilo"],
+      "NAMERA": ["upotreba za vožnju"],
+      "VREDNOST / ŠTETA": [">1.000 €"]
+    },
+    {
+      "row_id": "253-1",
+      "OSNOVNA RADNJA": ["uništenje ili oštećenje"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "NAMERA": ["nanošenje štete"]
+    },
+    {
+      "row_id": "253-2",
+      "OSNOVNA RADNJA": ["uništenje ili oštećenje"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "NAMERA": ["nanošenje štete"],
+      "VREDNOST / ŠTETA": ["3.000 € - 30.000 €"]
+    },
+    {
+      "row_id": "253-3",
+      "OSNOVNA RADNJA": ["uništenje ili oštećenje"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "NAMERA": ["nanošenje štete"],
+      "VREDNOST / ŠTETA": ["> 30.000 €"]
+    },
+    {
+      "row_id": "254-1",
+      "OSNOVNA RADNJA": ["neovlašćeno zauzimanje"],
+      "PREDMET DELA": ["tuđe ili državno zemljište"]
+    },
+    {
+      "row_id": "254-2",
+      "OSNOVNA RADNJA": ["neovlašćeno zauzimanje"],
+      "PREDMET DELA": ["tuđe ili državno zemljište"],
+      "OKOLNOSTI": ["zemljište posebne namene (nacionalni park/šuma)"]
+    }
+  ]
+}
+
+
+-----------------------------------
+ULAZ:
+-----------------------------------
+Ulaz je JSON objekat:
+
+{
+  "row_id": "...",
+  "OSNOVNA RADNJA": [...],
+  "PREDMET DELA": [...],
+  "INTERAKCIJA SA ŽRTVOM ": [...],
+  "NAČIN IZVRŠENJA": [...],
+  "OKOLNOSTI": [...],
+  "NAMERA": [...],
+  "VREDNOST / ŠTETA": [...],
+  "POSLEDICE": [...],
+  "POKUŠAJ": [...]
+}
+
+LOGIKA ODLUČIVANJA:
+
+1. OSNOVNI FILTER (OBAVEZNO):
+- OSNOVNA RADNJA, NAMERA I PREDMET DELA MORAJU BITI ISPUNJENI U POTPUNOSTI DA BI NEKI ČLAN BIO ZADOVOLJEN
+- Faktor se smatra postojećim ako je eksplicitno naveden
+- MORA KOMBINACIJA FAKTORA BITI ISPUNJENA: npr. za Prevara mora postojati namera pribavnjanja koristi, ako je kombinacija RADNJA, NAMERA koja ne postoji u tekstu zanemari član
+- Ako ovo nije ispunjeno odbaci član
+
+2. NAČIN:
+- Ako zakon traži specifičan način (provala, grupa, oružje...) on mora biti prisutan u ulazu
+- Ako ulaz ima više načina dovoljan je jedan
+
+3. NEDOVOLJNO PODATAKA:
+
+- Ako ne postoji potpuno poklapanje vrati: "nije moguće pouzdano utvrditi"
+
+-----------------------------------
+FORMAT ODGOVORA (OBAVEZNO):
+-----------------------------------
+
+Vrati ISKLJUČIVO JSON:
+
+{
+  "row_id": "<isti row_id>",
+  "result": "Član X Stav Y Tačka Z"
+}
+
+ILI:
+
+{
+  "row_id": "<isti row_id>",
+  "result": "nije moguće pouzdano utvrditi"
+}
+
+-----------------------------------
+PRAVILA:
+-----------------------------------
+
+- ništa osim JSON-a
+- bez objašnjenja
+- bez dodatnog teksta
+- tačno jedan rezultat
+- mora biti validan JSON       

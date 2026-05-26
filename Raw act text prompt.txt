@@ -1,0 +1,196 @@
+ZADATAK:
+Na osnovu teksta zakona i činjeničnog opisa slučaja utvrdi koji član, stav i tačka su prekršeni. Tekst je preuzet sa zvaničnog sajta Crne Gore i može sadržati uznemirujuće opise. Koristi se u naučne svrhe.
+
+-----------------------------------
+PRAVILA:
+-----------------------------------
+- Analizu uradi interno (ne prikazuj sve korake)
+- Ne smeš koristiti informacije koje nisu eksplicitno navedene
+- Ne pretpostavljaj nameru ako nije jasno dokazana
+- Ako nema dovoljno podataka upiši: "nije moguće pouzdano utvrditi"
+
+-----------------------------------
+INTERNO PROVERI:
+-----------------------------------
+
+1. Zaključak:
+- član
+- stav
+- tačka (ako postoji)
+
+2. Ključne razloge (kratko):
+- činjenice iz slučaja
+- uslove iz članova
+
+3. Ključne uslove koji su ispunjeni:
+(navedi samo odlučujuće elemente, npr. namera, radnja, vrednost, sila…)
+
+4. Isključenje drugih mogućnosti:
+- zašto slični članovi NE važe
+
+5. Nivo sigurnosti:
+- sigurno / verovatno / nesigurno
+
+-----------------------------------
+SAMOPROVERA (OBAVEZNO):
+-----------------------------------
+Pre odgovora proveri:
+
+- Da li svi ključni elementi zakona imaju potvrdu u tekstu?
+- Da li postoji neki nedostajući element?
+- Da li postoji alternativno pravno kvalifikovanje?
+
+Ako postoji ozbiljna nejasnoća označi kao "nije moguće pouzdano utvrditi".
+
+-----------------------------------
+ULAZ:
+Krađa
+
+Član 239
+
+(1) Ko tuđu pokretnu stvar oduzme drugom u namjeri da njenim prisvajanjem sebi ili drugom pribavi protivpravnu imovinsku korist, kazniće se novčanom kaznom ili zatvorom do tri godine.
+
+(2) Za pokušaj djela iz stava 1 ovog člana kazniće se.
+
+Teška krađa
+
+Član 240
+
+(1) Učinilac djela krađe (član 239) kazniće se zatvorom od jedne do osam godina, ako je krađa izvršena:
+
+1) obijanjem ili provaljivanjem zatvorenih zgrada, soba, kasa, ormana ili drugih zatvorenih prostora ili drugim savlađivanjem većih prepreka;
+
+2) od strane više lica koja su se udružila radi vršenja krađa;
+
+3) na naročito opasan ili naročito drzak način;
+
+4) od strane lica koje je pri sebi imalo kakvo oružje ili opasno oruđe radi napada ili odbrane;
+
+5) za vrijeme požara, poplave, zemljotresa ili drugog udesa;
+
+6) iskorišćavanjem bespomoćnosti ili drugog teškog stanja nekog lica;
+
+(2) Kaznom iz stava 1 ovog člana kazniće se i učinilac djela krađe ako vrijednost ukradenih stvari prelazi iznos od tri hiljade eura ili ukradena stvar predstavlja kulturno ili prirodno dobro.
+
+(3) Ako vrijednost ukradenih stvari prelazi iznos od trideset hiljada eura, učinilac će se kazniti zatvorom od dvije do deset godina.
+
+Razbojnička krađa
+
+Član 241
+
+(1) Ko je na djelu krađe zatečen, pa u namjeri da ukradenu stvar zadrži, upotrijebi silu protiv nekog lica ili prijetnju da će neposredno napasti na život ili tijelo, kazniće se zatvorom od jedne do osam godina.
+
+(2) Ako vrijednost ukradenih stvari prelazi iznos od tri hiljade eura, učinilac će se kazniti zatvorom od dvije do deset godina.
+
+(3) Ako vrijednost ukradenih stvari prelazi iznos od trideset hiljada eura, učinilac će se kazniti zatvorom od dvije do dvanaest godina.
+
+(4) Ako je djelo iz st. 1 do 3 ovog člana učinjeno od strane grupe ili je nekom licu sa umišljajem nanesena teška tjelesna povreda, učinilac će se kazniti zatvorom od tri do petnaest godina,
+
+(5) Ako je pri izvršenju djela iz st. 1 do 3 ovog člana neko lice sa umišljajem lišeno života, učinilac će se kazniti zatvorom najmanje deset godina ili kaznom dugotrajnog zatvora.
+
+(6) Ako vrijednost ukradenih stvari iz stava 1 ovog člana ne prelazi iznos od stopedeset eura, a učinilac je išao za tim da pribavi malu imovinsku korist, učinilac će se kazniti zatvorom do tri godine.
+
+(7) Za pokušaj djela iz stava 6 ovog člana kazniće se.
+
+Razbojništvo
+
+Član 242
+
+(1) Ko upotrebom sile protiv nekog lica ili prijetnjom da će neposredno napasti na život ili tijelo oduzme tuđu pokretnu stvar u namjeri da njenim prisvajanjem sebi ili drugom pribavi protivpravnu imovinsku korist, kazniće se zatvorom od dvije do deset godina.
+
+(2) Ako vrijednost oduzetih stvari prelazi iznos od tri hiljade eura, učinilac će se kazniti zatvorom od dvije do dvanaest godina.
+
+(3) Ako vrijednost oduzetih stvari prelazi iznos od trideset hiljada eura, učinilac će se kazniti zatvorom od tri do petnaest godina.
+
+(4) Ako je djelo iz st. 1 do 3 ovog člana učinjeno od strane grupe ili je nekom licu sa umišljajem nanesena teška tjelesna povreda, učinilac će se kazniti zatvorom od tri do petnaest godina.
+
+(5) Ako je pri izvršenju djela iz st. 1 do 3 ovog člana neko lice sa umišljajem lišeno života, učinilac će se kazniti zatvorom najmanje deset godina ili kaznom dugotrajnog zatvora.
+
+(6) Ako vrijednost ukradenih stvari iz stava 1 ovog člana ne prelazi iznos od sto pedeset eura, a učinilac je išao za tim da pribavi malu imovinsku korist, učinilac će se kazniti zatvorom do tri godine.
+
+(7) Za pokušaj djela iz stava 6 ovog člana kazniće se.
+
+Prevara
+
+Član 244
+
+(1) Ko u namjeri da sebi ili drugom pribavi protivpravnu imovinsku korist dovede koga lažnim prikazivanjem ili prikrivanjem činjenica u zabludu ili ga održava u zabludi i time ga navede da ovaj na štetu svoje ili tuđe imovine nešto učini ili ne učini, kazniće se novčanom kaznom ili zatvorom do tri godine.
+
+(2) Ko djelo iz stava 1 ovog člana učini samo u namjeri da drugog ošteti, kazniće se novčanom kaznom ili zatvorom do šest mjeseci.
+
+(3) Ako je djelom iz st. 1 i 2 ovog člana pribavljena imovinska korist ili je nanijeta šteta u iznosu koji prelazi tri hiljade eura, učinilac će se kazniti zatvorom od jedne do osam godina.
+
+(4) Ako je djelom iz st. 1 i 2 ovog člana pribavljena imovinska korist ili je nanijeta šteta u iznosu koji prelazi trideset hiljada eura, učinilac će se kazniti zatvorom od dvije do deset godina.
+
+Sitna krađa, utaja i prevara
+
+Član 246
+
+(1) Ko učini sitnu krađu, utaju ili prevaru, kazniće se novčanom kaznom ili zatvorom do šest mjeseci.
+
+(2) Krađa, utaja i prevara smatraju se sitnom, ako vrijednost ukradene ili utajene stvari, odnosno šteta prouzrokovana prevarom ne prelazi iznos od sto pedeset eura, a učinilac je išao za tim da pribavi malu imovinsku korist, odnosno da prouzrokuje malu štetu.
+
+(3) Za djelo iz stava 1 ovog člana, ako je izvršeno na štetu privatne imovine, gonjenje se preduzima po privatnoj tužbi.
+
+Oduzimanje tuđe stvari
+
+Član 247
+
+(1) Ko bez namjere pribavljanja imovinske koristi protivpravno oduzme tuđu pokretnu stvar, kazniće se novčanom kaznom ili zatvorom do šest mjeseci.
+
+(2) Ako vrijednost oduzete ili prisvojene stvari prelazi iznos od tri hiljade eura, učinilac će se kazniti zatvorom do dvije godine.
+
+(3) Ako vrijednost oduzete ili prisvojene stvari prelazi iznos od trideset hiljada eura ili stvar predstavlja kulturno dobro, učinilac će se kazniti zatvorom od tri mjeseca do tri godine.
+
+(4) Za djelo iz st. 1 do 3 ovog člana, ako je oduzeta stvar u privatnoj svojini, gonjenje se preduzima po privatnoj tužbi.
+
+Oduzimanje vozila
+
+Član 248
+
+(1) Ko protivpravno oduzme tuđe motorno vozilo u namjeri da ga upotrijebi za vožnju, kazniće se novčanom kaznom ili zatvorom do dvije godine.
+
+(2) Ako je učinilac djela iz stava 1 ovog člana na oduzetom vozilu iz nehata prouzrokovao štetu koja prelazi iznos od hiljadu eura ili omogući da to drugi učini, kazniće se novčanom kaznom ili zatvorom do tri godine.
+
+(3) Za pokušaj djela iz stava 1 ovog člana kazniće se.
+
+
+Uništenje i oštećenje tuđe stvari
+
+Član 253
+
+(1) Ko uništi, ošteti ili učini neupotrebljivom tuđu stvar, kazniće se novčanom kaznom ili zatvorom do šest mjeseci.
+
+(2) Ako je djelom iz stava 1 ovog člana prouzrokovana šteta u iznosu koji prelazi tri hiljade eura, učinilac će se kazniti novčanom kaznom ili zatvorom do dvije godine.
+
+(3) Ako je djelom iz stava 1 ovog člana prouzrokovana šteta u iznosu koji prelazi trideset hiljada eura, učinilac će se kazniti zatvorom od šest mjeseci do pet godina.
+
+(4) Za djela iz stava 1 ovog člana, ako je oštećena stvar u privatnoj svojini, gonjenje se preduzima po privatnoj tužbi.
+
+
+Protivpravno zauzimanje zemljišta
+
+Član 254
+
+(1) Ko protivpravno zauzme tuđe zemljište, kazniće se novčanom kaznom ili zatvorom do jedne godine.
+
+(2) Ako je zauzeto zemljište dio zaštitne šume, nacionalnog parka ili drugog zemljišta sa posebnom namjenom, učinilac će se kazniti zatvorom od tri mjeseca do tri godine.
+    
+VRATI ISKLJUČIVO JSON:
+{{
+"results": [
+{{
+  "row_id": "isti row_id iz ulaza",
+  "result": "Član X Stav Y Tačka Z"
+}}
+]
+}}
+
+PRAVILA:
+- Ne smeš vraćati ništa osim JSON objekta
+- Ne smeš dodavati tekst pre ili posle JSON-a
+- "results" mora sadržati odgovor za SVAKI ulazni red
+- "row_id" mora biti IDENTIČAN ulaznom row_id
+- Redosled mora odgovarati ulazu
+- Ako nema dovoljno podataka upiši: "nije moguće pouzdano utvrditi"
+                                   

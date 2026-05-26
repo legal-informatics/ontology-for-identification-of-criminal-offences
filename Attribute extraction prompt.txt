@@ -1,0 +1,140 @@
+ZADATAK:
+
+Uloga: Ti si pravni ekspert specijalizovan za Krivični zakonik (članovi 239–254). Tvoj zadatak je da analiziraš dostavljeni činjenični opis birajući isključivo ponuđene faktore.
+
+Instrukcija: Analiziraj tekst i za svaki od ponuđenih parametara, izaberi jednu ili više opcija koje se nalaze u listi ispod. Ako faktor nije prisutan u tekstu, označi ga sa "Nije primenjivo".
+
+LISTA DOSTUPNIH FAKTORA:
+
+1. OSNOVNA RADNJA
+Koja je primarna radnja izvršena (izaberi samo ako je neka od navedenih glavna radnja, a ne posledica nečeg drugog)?
+(izaberi jednu)
+oduzimanje stvari (uključuje električnu energiju ako je direktno uzimao)
+dovođenje u zabludu / održavanje u zabludi
+uništenje ili oštećenje (ako je ovo primarna radnja, ne posledica nekog događaja)
+neovlašćeno zauzimanje
+
+2. PREDMET DELA
+Šta je predmet radnje?
+(izaberi jednu ili više ako je potrebno)
+tuđa pokretna stvar
+električna energija
+motorno vozilo
+tuđe ili državno zemljište (mora biti tuđe)
+kulturno ili prirodno dobro (mora biti eksplicitno navedeno)
+
+3. INTERAKCIJA SA ŽRTVOM 
+Da li je počinilac zatečen na delu?
+da / ne
+Da li je upotrebljena sila ili prijetnja nad osobom? Sila mora biti na telo coveka, ne na predmete.
+da / ne
+Ako jeste, kada je upotrebljena?
+prije oduzimanja (počinilac sa namerom koristi silu radi oduzimanja tuđe stvari)
+nakon oduzimanja (počinilac koristi silu da bi zadržao tuđu stvar)
+nije primenjivo
+
+4. NAČIN IZVRŠENJA
+Da li je učinilac savladao fizičku prepreku (sam ulazak u tuđi posed bez muke ne spada u savlađivanje)? Prepreka je i bilo kakva sila kako bi se oslobodio predmet. Istrgavanje nije sila.
+da / ne
+Ako jeste, na koji način?
+- obijanje (brava, vrata, prozor)
+- provala uz silu (npr. ormar, kuća, vozilo...)
+nije navedeno
+
+5 OKOLNOSTI
+Da li je delo izvršeno od strane organizovane grupe? Organizovana grupa nije par ljudi koji se dogovore da nešto urade, već grupa koja organizovano i kontinualno ponavlja isto.
+da / ne
+Da li je učinilac bio naoružan?
+da / ne
+Da li je iskorišćena posebna situacija (navedi koja, ako jeste?
+- požar, poplava…
+- bespomoćnost žrtve (invalid, starost... nepažnja nije bespomoćnost)
+Da li je način izvršenja posebno drzak ili opasan?
+da / ne 
+
+6. NAMERA
+Koja je bila namera učinioca?
+(izaberi jednu)
+pribavljanje protivpravne imovinske koristi (samo ako je eksplicitno navedeno da ima materijalnu korist)
+pribavljanje male imovinske koristi (ako je namera bila za vrednost manju od 150 evra)
+bez namere pribavljanja koristi
+nanošenje štete
+upotreba za vožnju
+nije jasno
+
+7. VREDNOST / ŠTETA
+Da li je vrednost ili šteta navedena? Ako jeste, navesti u koji opseg spada (odgovoriti samo opsegom):
+< 150 €
+150 – 3.000 €
+3.000 € - 30.000 €
+> 30.000 €
+
+8. POSLEDICE
+Da li je nastupila telesna povreda?
+nema
+laka
+teška
+Da li je nastupila smrt?
+da / ne
+
+10. POKUŠAJ
+Da li je delo ostalo u pokušaju?
+da / ne
+                                
+Za svaki ulazni red vrati:
+
+- row_id
+- i vrijednosti za svaku kategoriju (lista ili null)
+DOBRO ANLIZIRAJ I AKO NISI SIGURAN U POSTOJANJE FAKTORA, UPIŠI -> null
+- Oduzimanjem električne energije se smatra isključivo oduzimanje tuđe enegrije kao glavni cilj. 
+- Tuđa pokretna stvar nisu zemljišta i šume.
+- Uništenje/oštećenje (činjenje stvari neupotrebljivom) biraj samo ako je oštećenje NAMERNO učinjeno kao cilj radnje
+- Naročito drzak ili opasan način biraj samo ako radnja uključuje:
+    - ozbiljno ugrožavanje ljudi PRILIKOM izvršenja krivičnog djela
+    - opasna sredstva (eksploziv, oružje, požar)
+- Uništenje ili oštećenje navodi samo ukoliko je glavna radnja uništenje tuđe stvari. Ukoliko je posledica napada, nesreće ili postoji neki drugi uzrok, onda ne navodi.
+- Sve radnje moraju proisteći kao glavne, a ne kao posledica drugih postupaka.
+- Kulturno ili prirodno dobro su isključivo zaštićena dobra i ako nije eksplicitno navedeno, ne navoditi.
+- Ukoliko je predmet dela novac, ne računati ga kao pokretnu stvar i vratiti null za PREDMET DELA.
+- Tuđa pokretna stvar mogu biti i delovi imovine, kablovi i bilo kakva stvar koja je uništena.
+- ako je eksplicitno navedena namera da se oduzme vise od 150 evra, zanemari opsege i upiši: > 150.
+- ako je preko 150 €, interno izvuci vrednost (ako je 20000, pisi 3.000 € - 30.000 €), uporedi i upiši u koji opseg spada (ako je namera bila da se oduzme preko 150, računaj po ovoj tački, iako je stvarna vrednost manja)
+    
+Ako se nešto ne pojavljuje u tekstu vtai null.
+DOBRO PROVERI VREDNOST I SMESTI U ODGOVARAJUĆI OKVIR. DAJ PREDNOST NAVEDENOJ VREDNOSTI U NAMERI ZA PROTIVPRAVNU KORIST.
+Ako je namera da pribavi imovinsku korist veću od 150 evra, upisati: vrednost > 150 evra, ne uzimati u obzir stvarnu vrednost.
+Dobro protumači tekst i ako nisi siguran u postojanje faktora, upiši: null
+
+
+Pažljivo analiziraj tekst i zaključi da li su gore pomenuti faktori zadovoljeni.
+-----------------------------------
+FORMAT ODGOVORA (OBAVEZNO) SA PRIMEROM:
+-----------------------------------
+
+Vrati ISKLJUČIVO JSON:
+
+{
+  "results": [
+    {
+      "row_id": "string",
+      "OSNOVNA RADNJA": [],
+      "PREDMET DELA": [],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrebljena sila pre oduzimanja/posle oduzimanja"],
+      "NAČIN IZVRŠENJA": ["provala uz silu/obijanje"],
+      "OKOLNOSTI": ["organizovana grupa", "naoružan", "požar/poplava", "drzak ili opasan način"],
+      "NAMERA": [],
+      "VREDNOST / ŠTETA": ["{opseg}"],
+      "POSLEDICE": ["teška/laka", "smrt"],
+      "POKUŠAJ": []
+    }
+  ]
+}
+
+-----------------------------------
+PRAVILA IZLAZA:
+-----------------------------------
+- ništa van JSON-a
+- svaki red mora biti prisutan
+- struktura nizova u json-u mora biti ispoštovana
+- redosled isti kao ulaz
+- ako nema vrednosti → null
