@@ -78,14 +78,14 @@ utvrdi koji član, stav i tačka Krivičnog zakonika je prekršen. Navedeni su f
       "row_id": "241-1",
       "OSNOVNA RADNJA": ["oduzimanje stvari"],
       "PREDMET DELA": ["tuđa pokretna stvar"],
-      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrbljena sila posle oduzimanja"],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrebljena sila posle oduzimanja"],
       "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
     },
     {
       "row_id": "241-2",
       "OSNOVNA RADNJA": ["oduzimanje stvari"],
       "PREDMET DELA": ["tuđa pokretna stvar"],
-      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrbljena sila posle oduzimanja"],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrebljena sila posle oduzimanja"],
       "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
       "VREDNOST / ŠTETA": ["3.000 € - 30.000 €"]
     },
@@ -93,7 +93,7 @@ utvrdi koji član, stav i tačka Krivičnog zakonika je prekršen. Navedeni su f
       "row_id": "241-3",
       "OSNOVNA RADNJA": ["oduzimanje stvari"],
       "PREDMET DELA": ["tuđa pokretna stvar"],
-      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrbljena sila posle oduzimanja"],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrebljena sila posle oduzimanja"],
       "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
       "VREDNOST / ŠTETA": ["> 30.000 €"]
     },
@@ -101,7 +101,7 @@ utvrdi koji član, stav i tačka Krivičnog zakonika je prekršen. Navedeni su f
       "row_id": "241-4",
       "OSNOVNA RADNJA": ["oduzimanje stvari"],
       "PREDMET DELA": ["tuđa pokretna stvar"],
-      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrbljena sila posle oduzimanja"],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrebljena sila posle oduzimanja"],
       "OKOLNOSTI": ["organizovana grupa", "teška telesna povreda"],
       "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
     },
@@ -109,7 +109,7 @@ utvrdi koji član, stav i tačka Krivičnog zakonika je prekršen. Navedeni su f
       "row_id": "241-5",
       "OSNOVNA RADNJA": ["oduzimanje stvari"],
       "PREDMET DELA": ["tuđa pokretna stvar"],
-      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrbljena sila: posle oduzimanja"],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrebljena sila: posle oduzimanja"],
       "OKOLNOSTI": ["lišavanje života"],
       "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
       "POSLEDICE": ["smrt"]
@@ -118,7 +118,7 @@ utvrdi koji član, stav i tačka Krivičnog zakonika je prekršen. Navedeni su f
       "row_id": "241-6",
       "OSNOVNA RADNJA": ["oduzimanje stvari"],
       "PREDMET DELA": ["tuđa pokretna stvar"],
-      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrbljena sila posle oduzimanja"],
+      "INTERAKCIJA SA ŽRTVOM ": ["zatečen na delu", "upotrebljena sila posle oduzimanja"],
       "NAMERA": ["pribavljanje male imovinske koristi"],
       "VREDNOST / ŠTETA": ["manje od 150 €"]
     },
@@ -126,14 +126,14 @@ utvrdi koji član, stav i tačka Krivičnog zakonika je prekršen. Navedeni su f
       "row_id": "242-1",
       "OSNOVNA RADNJA": ["oduzimanje stvari"],
       "PREDMET DELA": ["tuđa pokretna stvar"],
-      "INTERAKCIJA SA ŽRTVOM ": ["upotrbljena sila pre oduzimanja"],
+      "INTERAKCIJA SA ŽRTVOM ": ["upotrebljena sila pre oduzimanja"],
       "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
     },
     {
       "row_id": "242-2",
       "OSNOVNA RADNJA": ["oduzimanje stvari"],
       "PREDMET DELA": ["tuđa pokretna stvar"],
-      "INTERAKCIJA SA ŽRTVOM ": ["upotrbljena sila pre oduzimanja"],
+      "INTERAKCIJA SA ŽRTVOM ": ["upotrebljena sila pre oduzimanja"],
       "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
       "VREDNOST / ŠTETA": ["3.000 € - 30.000 €"]
     },
@@ -141,7 +141,7 @@ utvrdi koji član, stav i tačka Krivičnog zakonika je prekršen. Navedeni su f
       "row_id": "242-3",
       "OSNOVNA RADNJA": ["oduzimanje stvari"],
       "PREDMET DELA": ["tuđa pokretna stvar"],
-      "INTERAKCIJA SA ŽRTVOM ": ["upotrbljena sila pre oduzimanja"],
+      "INTERAKCIJA SA ŽRTVOM ": ["upotrebljena sila pre oduzimanja"],
       "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
       "VREDNOST / ŠTETA": ["> 30.000 €"]
     },
@@ -149,7 +149,7 @@ utvrdi koji član, stav i tačka Krivičnog zakonika je prekršen. Navedeni su f
       "row_id": "242-4",
       "OSNOVNA RADNJA": ["oduzimanje stvari"],
       "PREDMET DELA": ["tuđa pokretna stvar"],
-      "INTERAKCIJA SA ŽRTVOM ": ["upotrbljena sila pre oduzimanja"],
+      "INTERAKCIJA SA ŽRTVOM ": ["upotrebljena sila pre oduzimanja"],
       "OKOLNOSTI": ["organizovana grupa", "teška telesna povreda"],
       "NAMERA": ["pribavljanje protivpravne imovinske koristi"]
     },
@@ -157,7 +157,7 @@ utvrdi koji član, stav i tačka Krivičnog zakonika je prekršen. Navedeni su f
       "row_id": "242-5",
       "OSNOVNA RADNJA": ["oduzimanje stvari"],
       "PREDMET DELA": ["tuđa pokretna stvar"],
-      "INTERAKCIJA SA ŽRTVOM ": ["upotrbljena sila pre oduzimanja"],
+      "INTERAKCIJA SA ŽRTVOM ": ["upotrebljena sila pre oduzimanja"],
       "OKOLNOSTI": ["lišavanje života"],
       "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
       "POSLEDICE": ["smrt"]
@@ -166,7 +166,7 @@ utvrdi koji član, stav i tačka Krivičnog zakonika je prekršen. Navedeni su f
       "row_id": "242-6",
       "OSNOVNA RADNJA": ["oduzimanje stvari"],
       "PREDMET DELA": ["tuđa pokretna stvar"],
-      "INTERAKCIJA SA ŽRTVOM ": ["upotrbljena sila pre oduzimanja"],
+      "INTERAKCIJA SA ŽRTVOM ": ["upotrebljena sila pre oduzimanja"],
       "NAMERA": ["pribavljanje male imovinske koristi"],
       "VREDNOST / ŠTETA": ["manje od 150 €"],
       "POKUŠAJ": ["da"]
