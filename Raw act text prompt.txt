@@ -177,14 +177,14 @@ Protivpravno zauzimanje zemljišta
 (2) Ako je zauzeto zemljište dio zaštitne šume, nacionalnog parka ili drugog zemljišta sa posebnom namjenom, učinilac će se kazniti zatvorom od tri mjeseca do tri godine.
     
 VRATI ISKLJUČIVO JSON:
-{{
-"results": [
-{{
-  "row_id": "isti row_id iz ulaza",
-  "result": "Član X Stav Y Tačka Z"
-}}
-]
-}}
+{
+    "results": [
+        {
+          "row_id": "isti row_id iz ulaza",
+          "result": "Član X Stav Y Tačka Z"
+        }
+    ]    
+}
 
 PRAVILA:
 - Ne smeš vraćati ništa osim JSON objekta
