@@ -26,10 +26,10 @@ kulturno ili prirodno dobro (mora biti eksplicitno navedeno)
 3. INTERAKCIJA SA ŽRTVOM 
 Da li je počinilac zatečen na delu?
 da / ne
-Da li je upotrebljena sila ili prijetnja nad osobom? Sila mora biti na telo coveka, ne na predmete.
+Da li je upotrebljena sila ili prijetnja nad osobom? Sila mora biti na telo čoveka, ne na predmete.
 da / ne
 Ako jeste, kada je upotrebljena?
-prije oduzimanja (počinilac sa namerom koristi silu radi oduzimanja tuđe stvari)
+pre oduzimanja (počinilac sa namerom koristi silu radi oduzimanja tuđe stvari)
 nakon oduzimanja (počinilac koristi silu da bi zadržao tuđu stvar)
 nije primenjivo
 
@@ -84,11 +84,12 @@ da / ne
 Za svaki ulazni red vrati:
 
 - row_id
-- i vrijednosti za svaku kategoriju (lista ili null)
+- vrednosti za svaku kategoriju (lista ili null)
+
 DOBRO ANLIZIRAJ I AKO NISI SIGURAN U POSTOJANJE FAKTORA, UPIŠI -> null
 - Oduzimanjem električne energije se smatra isključivo oduzimanje tuđe enegrije kao glavni cilj. 
 - Tuđa pokretna stvar nisu zemljišta i šume.
-- Uništenje/oštećenje (činjenje stvari neupotrebljivom) biraj samo ako je oštećenje NAMERNO učinjeno kao cilj radnje
+- Uništenje/oštećenje (činjenje stvari neupotrebljivom) biraj samo ako je oštećenje NAMERNO učinjeno kao cilj radnje.
 - Naročito drzak ili opasan način biraj samo ako radnja uključuje:
     - ozbiljno ugrožavanje ljudi PRILIKOM izvršenja krivičnog djela
     - opasna sredstva (eksploziv, oružje, požar)
@@ -100,11 +101,12 @@ DOBRO ANLIZIRAJ I AKO NISI SIGURAN U POSTOJANJE FAKTORA, UPIŠI -> null
 - ako je eksplicitno navedena namera da se oduzme vise od 150 evra, zanemari opsege i upiši: > 150.
 - ako je preko 150 €, interno izvuci vrednost (ako je 20000, pisi 3.000 € - 30.000 €), uporedi i upiši u koji opseg spada (ako je namera bila da se oduzme preko 150, računaj po ovoj tački, iako je stvarna vrednost manja)
     
-Ako se nešto ne pojavljuje u tekstu vtai null.
+Ako se nešto ne pojavljuje u tekstu vrati null.
 DOBRO PROVERI VREDNOST I SMESTI U ODGOVARAJUĆI OKVIR. DAJ PREDNOST NAVEDENOJ VREDNOSTI U NAMERI ZA PROTIVPRAVNU KORIST.
 Ako je namera da pribavi imovinsku korist veću od 150 evra, upisati: vrednost > 150 evra, ne uzimati u obzir stvarnu vrednost.
 Dobro protumači tekst i ako nisi siguran u postojanje faktora, upiši: null
 
+Za svaki faktor koji se dobija kao odgovor na da/ne pitanje, vrati ime atributa ako je odgovor "da". U primeru odgovora date su moguće vrednosti za parametre.
 
 Pažljivo analiziraj tekst i zaključi da li su gore pomenuti faktori zadovoljeni.
 -----------------------------------
