@@ -1,0 +1,120 @@
+-----------------------------------
+PRIMERI (FEW-SHOT) DIREKTNI TEKST:
+-----------------------------------
+
+Primer 1:
+
+ULAZ:
+{
+  "row_id": "2",
+  "factual_description": "... protivpravno oduzeo putničko motorno vozilo marke M. P., ... u namjeri da ga upotrijebi za vožnju, prišao vozilu koje je bilo otključano i zatim ga upotrijebio za vožnju."
+}
+
+IZLAZ:
+{
+  "results": [
+    {
+      "row_id": "2",
+      "result": "Član 248 Stav 1"
+    }
+  ]
+}
+
+
+Primer 2:
+
+ULAZ:
+{
+  "row_id": "3",
+  "factual_description": "... po prethodnom dogovoru sa drugim licem, upotrebom sile prema oštećenom oduzeli su tuđe pokretne stvari u namjeri da njihovim prisvajanjem sebi pribave protivpravnu imovinsku korist. Oštećenom su zadali više udaraca i oduzeli torbicu sa novcem i drugim predmetima."
+}
+
+IZLAZ:
+{
+  "results": [
+    {
+      "row_id": "3",
+      "result": "Član 242 Stav 1"
+    }
+  ]
+}
+
+
+Primer 3:
+
+ULAZ:
+{
+  "row_id": "6",
+  "factual_description": "... oduzeo metalne patosnice i vrata od kaveza za koke nosilje ukupne vrijednosti 80,28 eura ... u namjeri da njihovim prisvajanjem sebi pribavi protivpravnu imovinsku korist."
+}
+
+IZLAZ:
+{
+  "results": [
+    {
+      "row_id": "6",
+      "result": "Član 246 Stav 1"
+    }
+  ]
+}
+
+
+Primer 4:
+
+ULAZ:
+{
+  "row_id": "11",
+  "factual_description": "Bez namjere da sebi pribavi imovinsku korist, protivpravno oduzeo tuđu pokretnu stvar - električnu energiju, priključivanjem na distributivni sistem bez prethodne saglasnosti."
+}
+
+IZLAZ:
+{
+  "results": [
+    {
+      "row_id": "11",
+      "result": "Član 247 Stav 1"
+    }
+  ]
+}
+
+
+Primer 5:
+
+ULAZ:
+{
+  "row_id": "12",
+  "factual_description": "Iz supermarketa oduzela različite proizvode ukupne vrijednosti 135,25 eura u namjeri da njihovim prisvajanjem sebi pribavi malu imovinsku korist."
+}
+
+IZLAZ:
+{
+  "results": [
+    {
+      "row_id": "12",
+      "result": "Član 246 Stav 1"
+    }
+  ]
+}
+
+
+Primer 6:
+
+ULAZ:
+{
+  "row_id": "13",
+  "factual_description": "U namjeri da sebi pribavi protivpravnu imovinsku korist oduzimao električnu energiju tako što je mimo električnog brojila priključio kablove i omogućio da se potrošnja ne registruje."
+}
+
+IZLAZ:
+{
+  "results": [
+    {
+      "row_id": "13",
+      "result": "Član 239 Stav 1"
+    }
+  ]
+}
+
+-----------------------------------
+KRAJ PRIMERA
+-----------------------------------

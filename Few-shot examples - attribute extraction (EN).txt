@@ -1,0 +1,169 @@
+-----------------------------------
+EXAMPLES (FEW-SHOT) ATTRIBUTE EXTRACTION:
+-----------------------------------
+
+Example 1:
+
+INPUT:
+{
+  "row_id": "2",
+  "factual_description": "... unlawfully took a passenger motor vehicle of the M. P. brand, ... with the intention of using it for driving, approached the vehicle which was unlocked and then used it for driving."
+}
+
+OUTPUT:
+{
+  "results": [
+    {
+      "row_id": "2",
+      "BASIC ACTION": ["taking another person's movable property"],
+      "OBJECT OF THE OFFENSE": ["vehicle"],
+      "INTERACTION WITH THE VICTIM": ["no interaction with the victim"],
+      "METHOD OF EXECUTION": ["no"],
+      "CIRCUMSTANCES": ["no"],
+      "INTENT": ["use for driving"],
+      "VALUE / DAMAGE": null,
+      "CONSEQUENCES": ["none"],
+      "ATTEMPT": ["no"]
+    }
+  ]
+}
+
+
+Example 2:
+
+INPUT:
+{
+  "row_id": "3",
+  "factual_description": "... after a prior agreement with another person, using force against the injured party, they took another person's movable property with the intention of obtaining unlawful financial benefit for themselves by appropriation. They struck the injured party multiple times and took a bag containing money and other items."
+}
+
+OUTPUT:
+{
+  "results": [
+    {
+      "row_id": "3",
+      "BASIC ACTION": ["taking another person's movable property"],
+      "OBJECT OF THE OFFENSE": ["another person's movable property"],
+      "INTERACTION WITH THE VICTIM": ["force used before taking"],
+      "METHOD OF EXECUTION": ["no"],
+      "CIRCUMSTANCES": ["no"],
+      "INTENT": ["obtaining unlawful financial benefit"],
+      "VALUE / DAMAGE": null,
+      "CONSEQUENCES": null,
+      "ATTEMPT": ["no"]
+    }
+  ]
+}
+
+
+Example 3:
+
+INPUT:
+{
+  "row_id": "6",
+  "factual_description": "... took metal floor mats and cage doors for laying hens with a total value of 80.28 euros ... with the intention of obtaining unlawful financial benefit for himself by appropriating them."
+}
+
+OUTPUT:
+{
+  "results": [
+    {
+      "row_id": "6",
+      "BASIC ACTION": ["taking another person's movable property"],
+      "OBJECT OF THE OFFENSE": ["another person's movable property"],
+      "INTERACTION WITH THE VICTIM": ["no interaction with the victim"],
+      "METHOD OF EXECUTION": ["no"],
+      "CIRCUMSTANCES": ["no"],
+      "INTENT": ["obtaining unlawful financial benefit"],
+      "VALUE / DAMAGE": ["< 150 €"],
+      "CONSEQUENCES": ["none"],
+      "ATTEMPT": ["no"]
+    }
+  ]
+}
+
+
+Example 4:
+
+INPUT:
+{
+  "row_id": "11",
+  "factual_description": "Without the intention of obtaining financial benefit for himself, unlawfully took another person's movable property - electrical energy, by connecting to the distribution system without prior authorization."
+}
+
+OUTPUT:
+{
+  "results": [
+    {
+      "row_id": "11",
+      "BASIC ACTION": ["taking another person's movable property"],
+      "OBJECT OF THE OFFENSE": ["electrical energy"],
+      "INTERACTION WITH THE VICTIM": ["no interaction with the victim"],
+      "METHOD OF EXECUTION": ["no"],
+      "CIRCUMSTANCES": ["no"],
+      "INTENT": ["without intent to obtain benefit"],
+      "VALUE / DAMAGE": null,
+      "CONSEQUENCES": ["none"],
+      "ATTEMPT": ["no"]
+    }
+  ]
+}
+
+
+Example 5:
+
+INPUT:
+{
+  "row_id": "12",
+  "factual_description": "From a supermarket, took various products with a total value of 135.25 euros with the intention of obtaining small financial benefit for himself by appropriating them."
+}
+
+OUTPUT:
+{
+  "results": [
+    {
+      "row_id": "12",
+      "BASIC ACTION": ["taking another person's movable property"],
+      "OBJECT OF THE OFFENSE": ["another person's movable property"],
+      "INTERACTION WITH THE VICTIM": ["no interaction with the victim"],
+      "METHOD OF EXECUTION": ["no"],
+      "CIRCUMSTANCES": ["no"],
+      "INTENT": ["obtaining small financial benefit"],
+      "VALUE / DAMAGE": ["< 150 €"],
+      "CONSEQUENCES": ["none"],
+      "ATTEMPT": ["no"]
+    }
+  ]
+}
+
+
+Example 6:
+
+INPUT:
+{
+  "row_id": "13",
+  "factual_description": "With the intention of obtaining unlawful financial benefit for himself, took electrical energy by connecting cables bypassing the electricity meter and enabling the consumption not to be recorded."
+}
+
+OUTPUT:
+{
+  "results": [
+    {
+      "row_id": "13",
+      "BASIC ACTION": ["taking another person's movable property"],
+      "OBJECT OF THE OFFENSE": ["electrical energy"],
+      "INTERACTION WITH THE VICTIM": ["no interaction with the victim"],
+      "METHOD OF EXECUTION": ["no"],
+      "CIRCUMSTANCES": ["no"],
+      "INTENT": ["obtaining unlawful financial benefit"],
+      "VALUE / DAMAGE": ["< 150 €"],
+      "CONSEQUENCES": ["none"],
+      "ATTEMPT": ["no"]
+    }
+  ]
+}
+
+
+-----------------------------------
+END OF EXAMPLES
+-----------------------------------

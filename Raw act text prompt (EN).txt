@@ -1,0 +1,193 @@
+TASK:
+Based on the text of the law and the factual description of the case, determine which article, paragraph, and item were violated. The text is taken from the official website of Montenegro and may contain disturbing descriptions. It is used for scientific purposes.
+
+-----------------------------------
+RULES:
+-----------------------------------
+- Perform the analysis internally (do not display all intermediate steps)
+- You must not use information that is not explicitly stated
+- Do not assume intent unless it is clearly proven
+- If there is insufficient data, enter: "not possible to reliably determine"
+
+-----------------------------------
+CHECK INTERNALLY:
+-----------------------------------
+
+1. Conclusion:
+- article
+- paragraph
+- item (if applicable)
+
+2. Key reasons (briefly):
+- facts from the case
+- conditions from the articles
+
+3. Key conditions met:
+(list only the decisive elements, e.g., intent, action, value, force...)
+
+4. Exclusion of other possibilities:
+- why similar articles DO NOT apply
+
+5. Confidence level:
+- certain / probable / uncertain
+
+-----------------------------------
+SELF-CHECK (MANDATORY):
+-----------------------------------
+Before responding, check:
+
+- Do all key elements of the law have confirmation in the text?
+- Is there any missing element?
+- Is there an alternative legal qualification?
+
+If there is a serious ambiguity, mark it as "not possible to reliably determine".
+
+-----------------------------------
+INPUT:
+Theft
+
+Article 239
+
+(1) Whoever takes from another his movable property with the intention to obtain an unlawful property benefit for themselves or another by appropriating it, shall be punished by a fine or imprisonment for up to three years.
+
+(2) An attempt of the offense referred to in paragraph 1 of this Article shall be punished.
+
+Aggravated Theft
+
+Article 240
+
+(1) A perpetrator of the offense of theft (Article 239) shall be punished by imprisonment from one to eight years if the theft was committed:
+
+1) by breaking open or breaking into closed buildings, rooms, safes, closets, or other closed spaces, or by otherwise overcoming major obstacles;
+
+2) by multiple persons who associated for the purpose of committing thefts;
+
+3) in an especially dangerous or especially brazen manner;
+
+4) by a person who carried a weapon or dangerous tool for attack or defense;
+
+5) during a fire, flood, earthquake, or other disaster;
+
+6) by exploiting the helplessness or other difficult condition of a person;
+
+(2) A perpetrator of the offense of theft shall also be punished with the penalty from paragraph 1 of this Article if the value of the stolen items exceeds the amount of three thousand euros or if the stolen item represents a cultural or natural good.
+
+(3) If the value of the stolen items exceeds the amount of thirty thousand euros, the perpetrator shall be punished by imprisonment from two to ten years.
+
+Robbery-Theft
+
+Article 241
+
+(1) Whoever is caught in the act of theft, and then uses force against a person or threatens to immediately attack life or limb with the intent to retain the stolen item, shall be punished by imprisonment from one to eight years.
+
+(2) If the value of the stolen items exceeds the amount of three thousand euros, the perpetrator shall be punished by imprisonment from two to ten years.
+
+(3) If the value of the stolen items exceeds the amount of thirty thousand euros, the perpetrator shall be punished by imprisonment from two to twelve years.
+
+(4) If the offense from paragraphs 1 to 3 of this Article was committed by a group or if serious bodily injury was intentionally inflicted on a person, the perpetrator shall be punished by imprisonment from three to fifteen years.
+
+(5) If a person was intentionally deprived of life during the commission of the offense from paragraphs 1 to 3 of this Article, the perpetrator shall be punished by imprisonment for at least ten years or by long-term imprisonment.
+
+(6) If the value of the stolen items from paragraph 1 of this Article does not exceed the amount of one hundred and fifty euros, and the perpetrator aimed to obtain a small property benefit, the perpetrator shall be punished by imprisonment for up to three years.
+
+(7) An attempt of the offense referred to in paragraph 6 of this Article shall be punished.
+
+Robbery
+
+Article 242
+
+(1) Whoever takes someone else's movable property by using force against a person or threatening to immediately attack life or limb, with the intent to obtain an unlawful property benefit for themselves or another by appropriating it, shall be punished by imprisonment from two to ten years.
+
+(2) If the value of the taken items exceeds the amount of three thousand euros, the perpetrator shall be punished by imprisonment from two to twelve years.
+
+(3) If the value of the taken items exceeds the amount of thirty thousand euros, the perpetrator shall be punished by imprisonment from three to fifteen years.
+
+(4) If the offense from paragraphs 1 to 3 of this Article was committed by a group or if serious bodily injury was intentionally inflicted on a person, the perpetrator shall be punished by imprisonment from three to fifteen years.
+
+(5) If a person was intentionally deprived of life during the commission of the offense from paragraphs 1 to 3 of this Article, the perpetrator shall be punished by imprisonment for at least ten years or by long-term imprisonment.
+
+(6) If the value of the stolen items from paragraph 1 of this Article does not exceed the amount of one hundred and fifty euros, and the perpetrator aimed to obtain a small property benefit, the perpetrator shall be punished by imprisonment for up to three years.
+
+(7) An attempt of the offense referred to in paragraph 6 of this Article shall be punished.
+
+Fraud
+
+Article 244
+
+(1) Whoever, with the intent to obtain an unlawful property benefit for themselves or another, deceives someone or keeps them in deception by falsely presenting or concealing facts, and thereby induces them to do or not do something to the detriment of their own or someone else's property, shall be punished by a fine or imprisonment for up to three years.
+
+(2) Whoever commits the offense from paragraph 1 of this Article solely with the intent to cause damage to another, shall be punished by a fine or imprisonment for up to six months.
+
+(3) If the offense from paragraphs 1 and 2 of this Article resulted in a property benefit or damage exceeding the amount of three thousand euros, the perpetrator shall be punished by imprisonment from one to eight years.
+
+(4) If the offense from paragraphs 1 and 2 of this Article resulted in a property benefit or damage exceeding the amount of thirty thousand euros, the perpetrator shall be punished by imprisonment from two to ten years.
+
+Petty Theft, Embezzlement, and Fraud
+
+Article 246
+
+(1) Whoever commits petty theft, embezzlement, or fraud shall be punished by a fine or imprisonment for up to six months.
+
+(2) Theft, embezzlement, and fraud are considered petty if the value of the stolen or embezzled item, or the damage caused by the fraud, does not exceed the amount of one hundred and fifty euros, and the perpetrator aimed to obtain a small property benefit or cause small damage.
+
+(3) For the offense from paragraph 1 of this Article, if committed to the detriment of private property, prosecution shall be undertaken upon private lawsuit.
+
+Misappropriation of Another's Property
+
+Article 247
+
+(1) Whoever unlawfully takes someone else's movable property without the intent to obtain a property benefit, shall be punished by a fine or imprisonment for up to six months.
+
+(2) If the value of the taken or appropriated item exceeds the amount of three thousand euros, the perpetrator shall be punished by imprisonment for up to two years.
+
+(3) If the value of the taken or appropriated item exceeds the amount of thirty thousand euros or if the item represents a cultural good, the perpetrator shall be punished by imprisonment from three months to three years.
+
+(4) For the offense from paragraphs 1 to 3 of this Article, if the taken item is in private ownership, prosecution shall be undertaken upon private lawsuit.
+
+Unlawful Taking of a Vehicle
+
+Article 248
+
+(1) Whoever unlawfully takes someone else's motor vehicle with the intent to use it for driving, shall be punished by a fine or imprisonment for up to two years.
+
+(2) If the perpetrator of the offense from paragraph 1 of this Article caused damage to the taken vehicle out of negligence exceeding the amount of one thousand euros, or enables another to do so, shall be punished by a fine or imprisonment for up to three years.
+
+(3) An attempt of the offense referred to in paragraph 1 of this Article shall be punished.
+
+Destruction and Damage of Another's Property
+
+Article 253
+
+(1) Whoever destroys, damages, or renders unusable another's property, shall be punished by a fine or imprisonment for up to six months.
+
+(2) If the offense from paragraph 1 of this Article caused damage exceeding the amount of three thousand euros, the perpetrator shall be punished by a fine or imprisonment for up to two years.
+
+(3) If the offense from paragraph 1 of this Article caused damage exceeding the amount of thirty thousand euros, the perpetrator shall be punished by imprisonment from six months to five years.
+
+(4) For the offenses from paragraph 1 of this Article, if the damaged item is in private ownership, prosecution shall be undertaken upon private lawsuit.
+
+Unlawful Occupation of Land
+
+Article 254
+
+(1) Whoever unlawfully occupies another's land, shall be punished by a fine or imprisonment for up to one year.
+
+(2) If the occupied land is part of a protective forest, national park, or other land with a special purpose, the perpetrator shall be punished by imprisonment from three months to three years.
+    
+RETURN EXCLUSIVELY JSON:
+{
+    "results": [
+        {
+          "row_id": "same row_id from the input",
+          "result": "Article X Paragraph Y Item Z"
+        }
+    ]    
+}
+
+RULES:
+- You must not return anything except the JSON object
+- You must not add text before or after the JSON
+- "results" must contain the answer for EVERY input row
+- "row_id" must be IDENTICAL to the input row_id
+- The order must match the input
+- If there is insufficient data, enter: "not possible to reliably determine"

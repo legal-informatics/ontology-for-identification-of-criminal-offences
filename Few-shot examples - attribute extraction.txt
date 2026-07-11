@@ -1,0 +1,169 @@
+-----------------------------------
+PRIMERI (FEW-SHOT) EKSTRAKCIJA ATRIBUTA:
+-----------------------------------
+
+Primer 1:
+
+ULAZ:
+{
+  "row_id": "2",
+  "factual_description": "... protivpravno oduzeo putničko motorno vozilo marke M. P., ... u namjeri da ga upotrijebi za vožnju, prišao vozilu koje je bilo otključano i zatim ga upotrijebio za vožnju."
+}
+
+IZLAZ:
+{
+  "results": [
+    {
+      "row_id": "2",
+      "OSNOVNA RADNJA": ["oduzimanje tuđe pokretne stvari"],
+      "PREDMET DELA": ["vozilo"],
+      "INTERAKCIJA SA ŽRTVOM": ["bez interakcije sa žrtvom"],
+      "NAČIN IZVRŠENJA": ["ne"],
+      "OKOLNOSTI": ["ne"],
+      "NAMERA": ["upotreba za vožnju"],
+      "VREDNOST / ŠTETA": null,
+      "POSLEDICE": ["nema"],
+      "POKUŠAJ": ["ne"]
+    }
+  ]
+}
+
+
+Primer 2:
+
+ULAZ:
+{
+  "row_id": "3",
+  "factual_description": "... po prethodnom dogovoru sa drugim licem, upotrebom sile prema oštećenom oduzeli su tuđe pokretne stvari u namjeri da njihovim prisvajanjem sebi pribave protivpravnu imovinsku korist. Oštećenom su zadali više udaraca i oduzeli torbicu sa novcem i drugim predmetima."
+}
+
+IZLAZ:
+{
+  "results": [
+    {
+      "row_id": "3",
+      "OSNOVNA RADNJA": ["oduzimanje tuđe pokretne stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM": ["upotrebljena sila pre oduzimanja"],
+      "NAČIN IZVRŠENJA": ["ne"],
+      "OKOLNOSTI": ["ne"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "VREDNOST / ŠTETA": null,
+      "POSLEDICE": null,
+      "POKUŠAJ": ["ne"]
+    }
+  ]
+}
+
+
+Primer 3:
+
+ULAZ:
+{
+  "row_id": "6",
+  "factual_description": "... oduzeo metalne patosnice i vrata od kaveza za koke nosilje ukupne vrijednosti 80,28 eura ... u namjeri da njihovim prisvajanjem sebi pribavi protivpravnu imovinsku korist."
+}
+
+IZLAZ:
+{
+  "results": [
+    {
+      "row_id": "6",
+      "OSNOVNA RADNJA": ["oduzimanje tuđe pokretne stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM": ["bez interakcije sa žrtvom"],
+      "NAČIN IZVRŠENJA": ["ne"],
+      "OKOLNOSTI": ["ne"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "VREDNOST / ŠTETA": ["< 150 €"],
+      "POSLEDICE": ["nema"],
+      "POKUŠAJ": ["ne"]
+    }
+  ]
+}
+
+
+Primer 4:
+
+ULAZ:
+{
+  "row_id": "11",
+  "factual_description": "Bez namjere da sebi pribavi imovinsku korist, protivpravno oduzeo tuđu pokretnu stvar - električnu energiju, priključivanjem na distributivni sistem bez prethodne saglasnosti."
+}
+
+IZLAZ:
+{
+  "results": [
+    {
+      "row_id": "11",
+      "OSNOVNA RADNJA": ["oduzimanje tuđe pokretne stvari"],
+      "PREDMET DELA": ["električna energija"],
+      "INTERAKCIJA SA ŽRTVOM": ["bez interakcije sa žrtvom"],
+      "NAČIN IZVRŠENJA": ["ne"],
+      "OKOLNOSTI": ["ne"],
+      "NAMERA": ["bez namere pribavljanja koristi"],
+      "VREDNOST / ŠTETA": null,
+      "POSLEDICE": ["nema"],
+      "POKUŠAJ": ["ne"]
+    }
+  ]
+}
+
+
+Primer 5:
+
+ULAZ:
+{
+  "row_id": "12",
+  "factual_description": "Iz supermarketa oduzela različite proizvode ukupne vrijednosti 135,25 eura u namjeri da njihovim prisvajanjem sebi pribavi malu imovinsku korist."
+}
+
+IZLAZ:
+{
+  "results": [
+    {
+      "row_id": "12",
+      "OSNOVNA RADNJA": ["oduzimanje tuđe pokretne stvari"],
+      "PREDMET DELA": ["tuđa pokretna stvar"],
+      "INTERAKCIJA SA ŽRTVOM": ["bez interakcije sa žrtvom"],
+      "NAČIN IZVRŠENJA": ["ne"],
+      "OKOLNOSTI": ["ne"],
+      "NAMERA": ["pribavljanje male imovinske koristi"],
+      "VREDNOST / ŠTETA": ["< 150 €"],
+      "POSLEDICE": ["nema"],
+      "POKUŠAJ": ["ne"]
+    }
+  ]
+}
+
+
+Primer 6:
+
+ULAZ:
+{
+  "row_id": "13",
+  "factual_description": "U namjeri da sebi pribavi protivpravnu imovinsku korist oduzimao električnu energiju tako što je mimo električnog brojila priključio kablove i omogućio da se potrošnja ne registruje."
+}
+
+IZLAZ:
+{
+  "results": [
+    {
+      "row_id": "13",
+      "OSNOVNA RADNJA": ["oduzimanje tuđe pokretne stvari"],
+      "PREDMET DELA": ["električna energija"],
+      "INTERAKCIJA SA ŽRTVOM": ["bez interakcije sa žrtvom"],
+      "NAČIN IZVRŠENJA": ["ne"],
+      "OKOLNOSTI": ["ne"],
+      "NAMERA": ["pribavljanje protivpravne imovinske koristi"],
+      "VREDNOST / ŠTETA": ["< 150 €"],
+      "POSLEDICE": ["nema"],
+      "POKUŠAJ": ["ne"]
+    }
+  ]
+}
+
+
+-----------------------------------
+KRAJ PRIMERA
+-----------------------------------

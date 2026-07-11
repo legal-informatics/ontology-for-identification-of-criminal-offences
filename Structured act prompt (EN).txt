@@ -1,0 +1,328 @@
+TASK:
+Based on the input factors (CORE ACTION, OBJECT OF THE OFFENSE, INTERACTION WITH THE VICTIM, MANNER OF COMMISSION, CIRCUMSTANCES, INTENT, VALUE / DAMAGE, CONSEQUENCES, ATTEMPT)
+determine which article, paragraph, and item of the Criminal Code was violated. The factors for each article are listed in square brackets. If the input attributes are present in the article, consider it a positive match.
+The article, paragraph, and item are displayed in the format: article-paragraph-item in the row_id line. The law is represented as follows:
+
+{
+  "results": [
+    {
+      "row_id": "239-1",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property", "electrical energy"],
+      "INTENT": ["obtaining unlawful property benefit"]
+    },
+    {
+      "row_id": "239-2",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property", "electrical energy"],
+      "INTENT": ["obtaining unlawful property benefit"],
+      "ATTEMPT": ["yes"]
+    },
+    {
+      "row_id": "240-1-1",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "MANNER OF COMMISSION": ["breaking/entering by force"],
+      "INTENT": ["obtaining unlawful property benefit"],
+    },
+    {
+      "row_id": "240-1-2",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "CIRCUMSTANCES": ["organized group"],
+      "INTENT": ["obtaining unlawful property benefit"],
+    },
+    {
+      "row_id": "240-1-3",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "CIRCUMSTANCES": ["brazen or dangerous manner"],
+      "INTENT": ["obtaining unlawful property benefit"],
+    },
+    {
+      "row_id": "240-1-4",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "CIRCUMSTANCES": ["armed"],
+      "INTENT": ["obtaining unlawful property benefit"],
+    },
+    {
+      "row_id": "240-1-5",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "CIRCUMSTANCES": ["fire/flood"],
+      "INTENT": ["obtaining unlawful property benefit"],
+    },
+    {
+      "row_id": "240-1-6",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "CIRCUMSTANCES": ["helplessness of the victim"],
+      "INTENT": ["obtaining unlawful property benefit"],
+    },
+    {
+      "row_id": "240-2",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property", "cultural or natural good"],
+      "INTENT": ["obtaining unlawful property benefit"],
+      "VALUE / DAMAGE": ["3.000 € - 30.000 €"]
+    },
+    {
+      "row_id": "240-3",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property", "cultural or natural good"],
+      "INTENT": ["obtaining unlawful property benefit"],
+      "VALUE / DAMAGE": ["> 30.000 €"]
+    },
+    {
+      "row_id": "241-1",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTERACTION WITH THE VICTIM": ["caught in the act", "force used after taking"],
+      "INTENT": ["obtaining unlawful property benefit"],
+    },
+    {
+      "row_id": "241-2",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTERACTION WITH THE VICTIM": ["caught in the act", "force used after taking"],
+      "INTENT": ["obtaining unlawful property benefit"],
+      "VALUE / DAMAGE": ["3.000 € - 30.000 €"]
+    },
+    {
+      "row_id": "241-3",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTERACTION WITH THE VICTIM": ["caught in the act", "force used after taking"],
+      "INTENT": ["obtaining unlawful property benefit"],
+      "VALUE / DAMAGE": ["> 30.000 €"]
+    },
+    {
+      "row_id": "241-4",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTERACTION WITH THE VICTIM": ["caught in the act", "force used after taking"],
+      "CIRCUMSTANCES": ["organized group", "serious bodily injury"],
+      "INTENT": ["obtaining unlawful property benefit"],
+    },
+    {
+      "row_id": "241-5",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTERACTION WITH THE VICTIM": ["caught in the act", "force used after taking"],
+      "CIRCUMSTANCES": ["deprivation of life"],
+      "INTENT": ["obtaining unlawful property benefit"],
+      "CONSEQUENCES": ["death"]
+    },
+    {
+      "row_id": "241-6",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTERACTION WITH THE VICTIM": ["caught in the act", "force used after taking"],
+      "INTENT": ["obtaining small property benefit"],
+      "VALUE / DAMAGE": ["less than 150 €"]
+    },
+    {
+      "row_id": "242-1",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTERACTION WITH THE VICTIM": ["force used before taking"],
+      "INTENT": ["obtaining unlawful property benefit"]
+    },
+    {
+      "row_id": "242-2",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTERACTION WITH THE VICTIM": ["force used before taking"],
+      "INTENT": ["obtaining unlawful property benefit"],
+      "VALUE / DAMAGE": ["3.000 € - 30.000 €"]
+    },
+    {
+      "row_id": "242-3",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTERACTION WITH THE VICTIM": ["force used before taking"],
+      "INTENT": ["obtaining unlawful property benefit"],
+      "VALUE / DAMAGE": ["> 30.000 €"]
+    },
+    {
+      "row_id": "242-4",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTERACTION WITH THE VICTIM": ["force used before taking"],
+      "CIRCUMSTANCES": ["organized group", "serious bodily injury"],
+      "INTENT": ["obtaining unlawful property benefit"]
+    },
+    {
+      "row_id": "242-5",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTERACTION WITH THE VICTIM": ["force used before taking"],
+      "CIRCUMSTANCES": ["deprivation of life"],
+      "INTENT": ["obtaining unlawful property benefit"],
+      "CONSEQUENCES": ["death"]
+    },
+    {
+      "row_id": "242-6",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTERACTION WITH THE VICTIM": ["force used before taking"],
+      "INTENT": ["obtaining small property benefit"],
+      "VALUE / DAMAGE": ["less than 150 €"],
+      "ATTEMPT": ["yes"]
+    },
+    {
+      "row_id": "244-1",
+      "CORE ACTION": ["deceiving / keeping in deception"],
+      "INTENT": ["obtaining unlawful property benefit"]
+    },
+    {
+      "row_id": "244-2",
+      "CORE ACTION": ["deceiving / keeping in deception"],
+      "INTENT": ["causing damage"]
+    },
+    {
+      "row_id": "244-3",
+      "CORE ACTION": ["deceiving / keeping in deception"],
+      "INTENT": ["obtaining unlawful property benefit"],
+      "VALUE / DAMAGE": ["3.000 € - 30.000 €"]
+    },
+    {
+      "row_id": "244-4",
+      "CORE ACTION": ["deceiving / keeping in deception"],
+      "INTENT": ["obtaining unlawful property benefit"],
+      "VALUE / DAMAGE": ["> 30.000 €"]
+    },
+    {
+      "row_id": "246-1",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTENT": ["obtaining small property benefit"],
+      "VALUE / DAMAGE": ["less than 150 €"]
+    },
+    {
+      "row_id": "247-1",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTENT": ["without intent to obtain benefit"]
+    },
+    {
+      "row_id": "247-2",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTENT": ["without intent to obtain benefit"],
+      "VALUE / DAMAGE": ["3.000 € - 30.000 €"]
+    },
+    {
+      "row_id": "247-3",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTENT": ["without intent to obtain benefit"],
+      "VALUE / DAMAGE": ["> 30.000 €"]
+    },
+    {
+      "row_id": "248-1",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["motor vehicle"],
+      "INTENT": ["use for driving"]
+    },
+    {
+      "row_id": "248-2",
+      "CORE ACTION": ["seizing property"],
+      "OBJECT OF THE OFFENSE": ["motor vehicle"],
+      "INTENT": ["use for driving"],
+      "VALUE / DAMAGE": [">1.000 €"]
+    },
+    {
+      "row_id": "253-1",
+      "CORE ACTION": ["destruction or damage"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTENT": ["causing damage"]
+    },
+    {
+      "row_id": "253-2",
+      "CORE ACTION": ["destruction or damage"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTENT": ["causing damage"],
+      "VALUE / DAMAGE": ["3.000 € - 30.000 €"]
+    },
+    {
+      "row_id": "253-3",
+      "CORE ACTION": ["destruction or damage"],
+      "OBJECT OF THE OFFENSE": ["someone else's movable property"],
+      "INTENT": ["causing damage"],
+      "VALUE / DAMAGE": ["> 30.000 €"]
+    },
+    {
+      "row_id": "254-1",
+      "CORE ACTION": ["unauthorized occupation"],
+      "OBJECT OF THE OFFENSE": ["another's or state land"]
+    },
+    {
+      "row_id": "254-2",
+      "CORE ACTION": ["unauthorized occupation"],
+      "OBJECT OF THE OFFENSE": ["another's or state land"],
+      "CIRCUMSTANCES": ["special purpose land (national park/forest)"]
+    }
+  ]
+}
+
+-----------------------------------
+INPUT:
+-----------------------------------
+The input is a JSON object:
+
+{
+  "row_id": "...",
+  "CORE ACTION": [...],
+  "OBJECT OF THE OFFENSE": [...],
+  "INTERACTION WITH THE VICTIM": [...],
+  "MANNER OF COMMISSION": [...],
+  "CIRCUMSTANCES": [...],
+  "INTENT": [...],
+  "VALUE / DAMAGE": [...],
+  "CONSEQUENCES": [...],
+  "ATTEMPT": [...]
+}
+
+DECISION LOGIC:
+
+1. CORE FILTER (MANDATORY):
+- CORE ACTION, INTENT, AND OBJECT OF THE OFFENSE MUST BE FULLY MET FOR ANY ARTICLE TO BE SATISFIED
+- A factor is considered to exist if it is explicitly stated
+- THE COMBINATION OF FACTORS MUST BE MET: e.g., for Fraud there must be an intent to obtain benefit; if the combination of ACTION and INTENT does not exist in the text, ignore the article
+- If this is not met, reject the article
+
+2. MANNER:
+- If the law requires a specific manner (break-in, group, weapon...), it must be present in the input
+- If the input contains multiple manners, one is sufficient
+
+3. INSUFFICIENT DATA:
+- If there is no complete match, return: "not possible to reliably determine"
+
+-----------------------------------
+RESPONSE FORMAT (MANDATORY):
+-----------------------------------
+
+Return EXCLUSIVELY JSON:
+
+{
+  "row_id": "<same row_id>",
+  "result": "Article X Paragraph Y Item Z"
+}
+
+OR:
+
+{
+  "row_id": "<same row_id>",
+  "result": "not possible to reliably determine"
+}
+
+-----------------------------------
+RULES:
+-----------------------------------
+- nothing except JSON
+- no explanations
+- no additional text
+- exactly one result
+- must be a valid JSON

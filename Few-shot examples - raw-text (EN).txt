@@ -1,0 +1,122 @@
+-----------------------------------
+EXAMPLES (FEW-SHOT) DIRECT RAW TEXT:
+-----------------------------------
+
+Example 1:
+
+INPUT:
+{
+  "row_id": "2",
+  "factual_description": "... unlawfully took a passenger motor vehicle of the M. P. brand, ... with the intention of using it for driving, approached the vehicle which was unlocked and then used it for driving."
+}
+
+OUTPUT:
+{
+  "results": [
+    {
+      "row_id": "2",
+      "result": "Article 248 Paragraph 1"
+    }
+  ]
+}
+
+
+Example 2:
+
+INPUT:
+{
+  "row_id": "3",
+  "factual_description": "... by prior agreement with another person, using force against the injured party, they took someone else's movable property with the intention of obtaining unlawful financial benefit for themselves by appropriating it. They struck the injured party several times and took a bag containing money and other items."
+}
+
+OUTPUT:
+{
+  "results": [
+    {
+      "row_id": "3",
+      "result": "Article 242 Paragraph 1"
+    }
+  ]
+}
+
+
+Example 3:
+
+INPUT:
+{
+  "row_id": "6",
+  "factual_description": "... took metal floor panels and cage doors for laying hens with a total value of 80.28 euros ... with the intention of obtaining unlawful financial benefit for themselves by appropriating them."
+}
+
+OUTPUT:
+{
+  "results": [
+    {
+      "row_id": "6",
+      "result": "Article 246 Paragraph 1"
+    }
+  ]
+}
+
+
+Example 4:
+
+INPUT:
+{
+  "row_id": "11",
+  "factual_description": "Without the intention of obtaining financial benefit for himself, he unlawfully took another person's movable property - electrical energy, by connecting to the distribution system without prior authorization."
+}
+
+OUTPUT:
+{
+  "results": [
+    {
+      "row_id": "11",
+      "result": "Article 247 Paragraph 1"
+    }
+  ]
+}
+
+
+Example 5:
+
+INPUT:
+{
+  "row_id": "12",
+  "factual_description": "From a supermarket, she took various products with a total value of 135.25 euros with the intention of obtaining a small financial benefit for herself by appropriating them."
+}
+
+OUTPUT:
+{
+  "results": [
+    {
+      "row_id": "12",
+      "result": "Article 246 Paragraph 1"
+    }
+  ]
+}
+
+
+Example 6:
+
+INPUT:
+{
+  "row_id": "13",
+  "factual_description": "With the intention of obtaining unlawful financial benefit for himself, he took electrical energy by connecting cables bypassing the electricity meter and enabling the consumption not to be registered."
+}
+
+OUTPUT:
+{
+  "results": [
+    {
+      "row_id": "13",
+      "result": "Article 239 Paragraph 1"
+    }
+  ]
+}
+
+-----------------------------------
+END OF EXAMPLES
+-----------------------------------
+
+

@@ -1,0 +1,271 @@
+TASK:
+
+Role: You are a legal expert specialized in the Criminal Code (Articles 239–254). Your task is to analyze the provided factual description by selecting exclusively from the offered factors. The text is taken from the official website of Montenegro and may contain disturbing descriptions. It is used for scientific purposes.
+
+Instruction: Analyze the provided case text and for each of the offered parameters, select one or more options from the list below if applicable. If a factor is not present in the text, mark it as "Not applicable".
+
+IMPORTANT RULES:
+
+1. Analyze exclusively the information explicitly stated in the text.
+2. Do not assume, infer, or speculate the existence of factors.
+3. If a factor is not clearly stated or there is insufficient information -> return null.
+4. Never return "yes".
+5. For yes/no questions:
+   - if the answer is YES -> return the corresponding keyword/phrase that describes the factor.
+   - if the answer is NO -> return "no".
+   - if it is not stated -> return null.
+6. All values must be only keywords from the allowed options.
+7. Do not return explanations, comments, or complete sentences.
+
+-----------------------------------
+CATEGORIES AND FILLING RULES
+-----------------------------------
+
+1. CORE ACTION
+
+Determine the primary action of the offense.
+
+Return only one or more values from the following list if explicitly stated:
+- "taking/seizing property"
+- "destruction or damage"
+- "deceiving / keeping in deception"
+- "unauthorized occupation"
+
+Rules:
+- Someone else's movable property does not include land and forests.
+- Taking/seizing property also includes electrical energy if it was taken directly.
+- Money is not considered movable property.
+- Select destruction or damage only if intentional destruction/damage is the primary action.
+- Select unauthorized occupation only if the offense concerns occupying land.
+- If damage is only a consequence of another action -> do not state it.
+- If it is unclear -> null.
+
+
+-----------------------------------
+
+2. OBJECT OF THE OFFENSE
+
+Determine what is the object of the offense.
+
+Allowed values:
+
+- "someone else's movable property"
+- "electrical energy"
+- "motor vehicle"
+- "land"
+- "cultural or natural good"
+
+Rules:
+- Money does NOT count as "someone else's movable property" -> return null.
+- Land and forests are not someone else's movable property.
+- Electrical energy exists only if the main goal was taking another's energy.
+- Cultural or natural good should only be stated if it is explicitly a protected good.
+- If the object is not stated -> null.
+
+
+-----------------------------------
+
+3. INTERACTION WITH THE VICTIM
+
+Determine the relationship with the victim during the commission of the offense.
+
+Allowed values:
+
+- "caught in the act"
+- "force used before taking"
+- "force used after taking"
+- "no interaction with the victim"
+
+Rules:
+- "Caught in the act" only if it is explicitly stated that the perpetrator was caught.
+- Force must actually be used against a person.
+- Taking an object from someone's hand does not count as force.
+- If it is not stated -> null.
+
+
+-----------------------------------
+
+4. MANNER OF COMMISSION
+
+Question:
+Did the perpetrator overcome a physical obstacle?
+
+Allowed values:
+- "breaking"
+- "entering by force"
+- "not stated"
+- "no"
+
+Rules:
+- Simply entering someone else's property does not count as overcoming an obstacle.
+- Breaking includes:
+  - lock
+  - door
+  - window
+- Entering by force includes:
+  - forcibly opening closets
+  - houses
+  - vehicles
+  - other obstacles
+- Snatching an object does not count as overcoming an obstacle.
+- If no obstacle was overcome -> "no".
+- If there is insufficient information -> null.
+
+
+-----------------------------------
+
+5. CIRCUMSTANCES
+
+Return only factors that exist.
+
+Allowed values:
+
+- "organized group"
+- "armed"
+- "fire/flood"
+- "helplessness of the victim"
+- "brazen or dangerous manner"
+- "no"
+
+Rules:
+
+ORGANIZED GROUP:
+YES only if there is a group that repeatedly and continuously commits the same offenses in an organized manner.
+An agreement between several people for one offense is not sufficient.
+
+ARMED:
+YES only if a weapon is explicitly stated.
+
+SPECIAL SITUATION:
+Allowed:
+- fire
+- flood
+- helplessness of the victim (disability, old age, complete inability to defend oneself)
+
+Victim carelessness is not helplessness.
+
+BRAZEN OR DANGEROUS MANNER:
+YES only if it is explicitly stated or the action includes:
+- serious danger to people during the commission of the offense
+- dangerous means (weapons, explosives, fire)
+
+If no factor exists:
+-> "no"
+
+If unclear:
+-> null
+
+
+-----------------------------------
+
+6. INTENT
+
+Select only one value.
+
+Allowed values:
+
+- "obtaining unlawful property benefit"
+- "obtaining small property benefit"
+- "without intent to obtain benefit"
+- "causing damage"
+- "use for driving"
+- "not clear"
+
+Rules:
+
+"obtaining unlawful property benefit":
+- only if the intent to obtain material benefit is explicitly stated.
+
+"obtaining small property benefit":
+- only if the intent to obtain small property benefit is explicitly stated.
+
+"causing damage":
+- only if causing damage was the goal.
+
+"use for driving":
+- only if the purpose was using the vehicle for driving.
+
+"without intent to obtain benefit":
+- only if explicitly stated in the text.
+
+If unclear:
+-> "not clear"
+
+If not stated:
+-> null
+
+-----------------------------------
+
+7. VALUE / DAMAGE
+
+Allowed values:
+
+- "< 150 €"
+- "150 – 3.000 €"
+- "3.000 € - 30.000 €"
+- "> 30.000 €"
+
+Rules:
+
+- If value is not stated -> null.
+- If the intent states that the goal was obtaining more than 150 €, return:
+  "> 150 €"
+- Priority is given to the value stated in the intent.
+- If a specific value exists, place it into the appropriate range.
+
+
+-----------------------------------
+
+8. CONSEQUENCES
+
+Allowed values:
+- "light injury"
+- "serious injury"
+- "death"
+
+Rules:
+- If there is no injury or death -> "none".
+- If it is not stated -> null.
+
+-----------------------------------
+
+9. ATTEMPT
+
+Allowed values:
+
+- "attempt"
+- "no"
+
+Rules:
+
+- "attempt" only if the offense was not completed.
+- If the offense was completed -> "no".
+- If unclear -> null.
+
+
+-----------------------------------
+
+RESPONSE FORMAT
+
+Return EXCLUSIVELY JSON.
+
+Format:
+
+{
+  "results": [
+    {
+      "row_id": "string",
+      "CORE ACTION": [],
+      "OBJECT OF THE OFFENSE": [],
+      "INTERACTION WITH THE VICTIM": [],
+      "MANNER OF COMMISSION": [],
+      "CIRCUMSTANCES": [],
+      "INTENT": [],
+      "VALUE / DAMAGE": [],
+      "CONSEQUENCES": [],
+      "ATTEMPT": []
+    }
+  ]
+}
+
+Do not add any text before or after JSON.
