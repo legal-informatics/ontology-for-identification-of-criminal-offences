@@ -23,113 +23,133 @@
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#imaKaznu
 :imaKaznu rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
-          rdfs:range :Kazna .
+          rdfs:range :Kazna ;
+          rdfs:comment "hasPunishment"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#imaNameru
 :imaNameru rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
            rdfs:domain :Počinilac ;
-           rdfs:range :Namera .
+           rdfs:range :Namera ;
+           rdfs:comment "hasIntent"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#imaNačin
 :imaNačin rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
           rdfs:domain :Počinilac ;
-          rdfs:range :Način_izvršenja .
+          rdfs:range :Način_izvršenja ;
+          rdfs:comment "hasMethod"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#imaOkolnost
 :imaOkolnost rdf:type owl:ObjectProperty ;
-             rdfs:subPropertyOf owl:topObjectProperty .
+             rdfs:subPropertyOf owl:topObjectProperty ;
+             rdfs:comment "hasCircumstance"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#imaPomoćnoSredstvo
 :imaPomoćnoSredstvo rdf:type owl:ObjectProperty ;
                     rdfs:domain :Počinilac ;
-                    rdfs:range :Pomoćna_sredstva .
+                    rdfs:range :Pomoćna_sredstva ;
+                    rdfs:comment "hasUsedInstrument"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#imaPosledicu
 :imaPosledicu rdf:type owl:ObjectProperty ;
               rdfs:subPropertyOf owl:topObjectProperty ;
               rdfs:domain :Osoba ;
-              rdfs:range :Posledica .
+              rdfs:range :Posledica ;
+              rdfs:comment "hasConsequence"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#imaPočinioca
 :imaPočinioca rdf:type owl:ObjectProperty ;
               rdfs:domain :Slučaj ;
-              rdfs:range :Počinilac .
+              rdfs:range :Počinilac ;
+              rdfs:comment "hasOffender"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#imaSaučesništvo
 :imaSaučesništvo rdf:type owl:ObjectProperty ;
                  rdfs:domain :Počinilac ;
-                 rdfs:range :Saučesništvo .
+                 rdfs:range :Saučesništvo ;
+                 rdfs:comment "hasComplicity"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#imaStanje
 :imaStanje rdf:type owl:ObjectProperty ;
            rdfs:subPropertyOf owl:topObjectProperty ;
            rdfs:domain :Osoba ;
-           rdfs:range :Stanje_osobe .
+           rdfs:range :Stanje_osobe ;
+           rdfs:comment "hasState"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#imaŽrtvu
 :imaŽrtvu rdf:type owl:ObjectProperty ;
           rdfs:domain :Slučaj ;
-          rdfs:range :Žrtva .
+          rdfs:range :Žrtva ;
+          rdfs:comment "hasVictim"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#konačnoPreporučeno
 :konačnoPreporučeno rdf:type owl:ObjectProperty ;
                     rdfs:domain :Slučaj ;
-                    rdfs:range :Kazna .
+                    rdfs:range :Kazna ;
+                    rdfs:comment "finalRuleBasedRecommended"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#konačnoZaključeno
 :konačnoZaključeno rdf:type owl:ObjectProperty ;
                    rdfs:domain :Slučaj ;
-                   rdfs:range :Kazna .
+                   rdfs:range :Kazna ;
+                   rdfs:comment "finalRuleBasedInferred"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#odnosiSeNaDelo
-:odnosiSeNaDelo rdf:type owl:ObjectProperty .
+:odnosiSeNaDelo rdf:type owl:ObjectProperty ;
+                rdfs:comment "reliesOnAct"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#oduzeto
-:oduzeto rdf:type owl:ObjectProperty .
+:oduzeto rdf:type owl:ObjectProperty ;
+         rdfs:comment "taken"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#oslanjaSeNa
-:oslanjaSeNa rdf:type owl:ObjectProperty .
+:oslanjaSeNa rdf:type owl:ObjectProperty ;
+             rdfs:comment "reliesOn"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#oštećeno
 :oštećeno rdf:type owl:ObjectProperty ;
-          rdfs:range :Ukradena_stvar .
+          rdfs:range :Ukradena_stvar ;
+          rdfs:comment "damaged"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#pripada
-:pripada rdf:type owl:ObjectProperty .
+:pripada rdf:type owl:ObjectProperty ;
+         rdfs:comment "belongsTo"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#rasuđivanjemZaključeno
 :rasuđivanjemZaključeno rdf:type owl:ObjectProperty ;
-                        rdfs:domain :Slučaj .
+                        rdfs:domain :Slučaj ;
+                        rdfs:comment "ruleBasedInferred"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#ukradeno
 :ukradeno rdf:type owl:ObjectProperty ;
           rdfs:subPropertyOf owl:topObjectProperty ;
           rdfs:domain :Slučaj ;
-          rdfs:range :Ukradena_stvar .
+          rdfs:range :Ukradena_stvar ;
+          rdfs:comment "stolen"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#zauzeto
-:zauzeto rdf:type owl:ObjectProperty .
+:zauzeto rdf:type owl:ObjectProperty ;
+         rdfs:comment "occupied"@en .
 
 
 #################################################################
@@ -138,22 +158,26 @@
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#pokušaj
 :pokušaj rdf:type owl:DatatypeProperty ;
-         rdfs:range xsd:boolean .
+         rdfs:range xsd:boolean ;
+         rdfs:comment "attempt"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#povereno
 :povereno rdf:type owl:DatatypeProperty ;
-          rdfs:range xsd:boolean .
+          rdfs:range xsd:boolean ;
+          rdfs:comment "trusted"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#prećeno
 :prećeno rdf:type owl:DatatypeProperty ;
-         rdfs:subPropertyOf owl:topDataProperty .
+         rdfs:subPropertyOf owl:topDataProperty ;
+         rdfs:comment "threatened"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#ukupnaVrednost
 :ukupnaVrednost rdf:type owl:DatatypeProperty ;
-                rdfs:range xsd:double .
+                rdfs:range xsd:double ;
+                rdfs:comment "totalValue"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#upotrebljenaSila
@@ -161,7 +185,8 @@
                   rdfs:domain [ rdf:type owl:Restriction ;
                                 owl:onProperty :upotrebljenaSila ;
                                 owl:someValuesFrom xsd:boolean
-                              ] .
+                              ] ;
+                  rdfs:comment "usedForce"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#zatečen
@@ -170,7 +195,8 @@
          rdfs:domain [ rdf:type owl:Restriction ;
                        owl:onProperty :zatečen ;
                        owl:someValuesFrom xsd:boolean
-                     ] .
+                     ] ;
+         rdfs:comment "caughtInAct"@en .
 
 
 #################################################################
@@ -184,20 +210,24 @@
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Električna_energija
 :Električna_energija rdf:type owl:Class ;
-                     rdfs:subClassOf :Pokretna_stvar .
+                     rdfs:subClassOf :Pokretna_stvar ;
+                     rdfs:comment "Electric energy"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Element_presude
-:Element_presude rdf:type owl:Class .
+:Element_presude rdf:type owl:Class ;
+                 rdfs:comment "Case element"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Element_zakona
-:Element_zakona rdf:type owl:Class .
+:Element_zakona rdf:type owl:Class ;
+                rdfs:comment "Legal act element"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Fizičko_stanje
 :Fizičko_stanje rdf:type owl:Class ;
-                rdfs:subClassOf :Stanje_osobe .
+                rdfs:subClassOf :Stanje_osobe ;
+                rdfs:comment "Physical state"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Glava
@@ -212,150 +242,180 @@
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Javni_uređaj_ili_delovi_javnog_uređaja
 :Javni_uređaj_ili_delovi_javnog_uređaja rdf:type owl:Class ;
-                                        rdfs:subClassOf :Pokretna_stvar .
+                                        rdfs:subClassOf :Pokretna_stvar ;
+                                        rdfs:comment "Public device or parts of public device"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Kazna
 :Kazna rdf:type owl:Class ;
-       rdfs:subClassOf :Element_zakona .
+       rdfs:subClassOf :Element_zakona ;
+       rdfs:comment "Punishment"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Krađa
 :Krađa rdf:type owl:Class ;
-       rdfs:subClassOf :Počinjeno_delo .
+       rdfs:subClassOf :Počinjeno_delo ;
+       rdfs:comment "Theft"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Kulturno_ili_prirodno_dobro
 :Kulturno_ili_prirodno_dobro rdf:type owl:Class ;
-                             rdfs:subClassOf :Pokretna_stvar .
+                             rdfs:subClassOf :Pokretna_stvar ;
+                             rdfs:comment "Cultural or natural good"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Mentalno_stanje
 :Mentalno_stanje rdf:type owl:Class ;
-                 rdfs:subClassOf :Stanje_osobe .
+                 rdfs:subClassOf :Stanje_osobe ;
+                 rdfs:comment "Mental state"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Namera
 :Namera rdf:type owl:Class ;
-        rdfs:subClassOf :Element_presude .
+        rdfs:subClassOf :Element_presude ;
+        rdfs:comment "Intent"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Način_izvršenja
 :Način_izvršenja rdf:type owl:Class ;
-                 rdfs:subClassOf :Element_presude .
+                 rdfs:subClassOf :Element_presude ;
+                 rdfs:comment "Method of execution"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Nepokretna_stvar
 :Nepokretna_stvar rdf:type owl:Class ;
-                  rdfs:subClassOf :Ukradena_stvar .
+                  rdfs:subClassOf :Ukradena_stvar ;
+                  rdfs:comment "Immovable object"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Novac
 :Novac rdf:type owl:Class ;
-       rdfs:subClassOf :Pokretna_stvar .
+       rdfs:subClassOf :Pokretna_stvar ;
+       rdfs:comment "Money"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Novčana_kazna
 :Novčana_kazna rdf:type owl:Class ;
-               rdfs:subClassOf :Kazna .
+               rdfs:subClassOf :Kazna ;
+               rdfs:comment "Monetary punishment"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Oduzimanje_tuđe_stvari
 :Oduzimanje_tuđe_stvari rdf:type owl:Class ;
-                        rdfs:subClassOf :Počinjeno_delo .
+                        rdfs:subClassOf :Počinjeno_delo ;
+                        rdfs:comment "Unauthorized use of another's property"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Oduzimanje_vozila
 :Oduzimanje_vozila rdf:type owl:Class ;
-                   rdfs:subClassOf :Počinjeno_delo .
+                   rdfs:subClassOf :Počinjeno_delo ;
+                   rdfs:comment "Unlawful taking of a vehicle"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Okolnost
 :Okolnost rdf:type owl:Class ;
-          rdfs:subClassOf :Element_presude .
+          rdfs:subClassOf :Element_presude ;
+          rdfs:comment "Circumstance"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Oruđe
 :Oruđe rdf:type owl:Class ;
-       rdfs:subClassOf :Pomoćna_sredstva .
+       rdfs:subClassOf :Pomoćna_sredstva ;
+       rdfs:comment "Tool"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Oružje
 :Oružje rdf:type owl:Class ;
-        rdfs:subClassOf :Pomoćna_sredstva .
+        rdfs:subClassOf :Pomoćna_sredstva ;
+        rdfs:comment "Weapon"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Osoba
-:Osoba rdf:type owl:Class .
+:Osoba rdf:type owl:Class ;
+       rdfs:comment "Person"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Pokretna_stvar
 :Pokretna_stvar rdf:type owl:Class ;
-                rdfs:subClassOf :Ukradena_stvar .
+                rdfs:subClassOf :Ukradena_stvar ;
+                rdfs:comment "Movable object"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Pomoćna_sredstva
 :Pomoćna_sredstva rdf:type owl:Class ;
-                  rdfs:subClassOf :Element_presude .
+                  rdfs:subClassOf :Element_presude ;
+                  rdfs:comment "Used instruments"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Posebna_namena
 :Posebna_namena rdf:type owl:Class ;
-                rdfs:subClassOf :Zemljište .
+                rdfs:subClassOf :Zemljište ;
+                rdfs:comment "Special usage"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Posledica
 :Posledica rdf:type owl:Class ;
-           rdfs:subClassOf :Element_presude .
+           rdfs:subClassOf :Element_presude ;
+           rdfs:comment "Consequence"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Počinilac
 :Počinilac rdf:type owl:Class ;
-           rdfs:subClassOf :Osoba .
+           rdfs:subClassOf :Osoba ;
+           rdfs:comment "Offender"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Počinjeno_delo
-:Počinjeno_delo rdf:type owl:Class .
+:Počinjeno_delo rdf:type owl:Class ;
+                rdfs:comment "Criminal act"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Predmet
 :Predmet rdf:type owl:Class ;
-         rdfs:subClassOf :Pokretna_stvar .
+         rdfs:subClassOf :Pokretna_stvar ;
+         rdfs:comment "Base object"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Prevara
 :Prevara rdf:type owl:Class ;
-         rdfs:subClassOf :Počinjeno_delo .
+         rdfs:subClassOf :Počinjeno_delo ;
+         rdfs:comment "Fraud"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Protivpravno_zauzimanje_zemljišta
 :Protivpravno_zauzimanje_zemljišta rdf:type owl:Class ;
-                                   rdfs:subClassOf :Počinjeno_delo .
+                                   rdfs:subClassOf :Počinjeno_delo ;
+                                   rdfs:comment "Unlawful occupation of a land"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Psihičko_stanje
 :Psihičko_stanje rdf:type owl:Class ;
-                 rdfs:subClassOf :Stanje_osobe .
+                 rdfs:subClassOf :Stanje_osobe ;
+                 rdfs:comment "Psychological state"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Razbojnička_krađa
 :Razbojnička_krađa rdf:type owl:Class ;
-                   rdfs:subClassOf :Počinjeno_delo .
+                   rdfs:subClassOf :Počinjeno_delo ;
+                   rdfs:comment "Robbery theft"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Razbojništvo
 :Razbojništvo rdf:type owl:Class ;
-              rdfs:subClassOf :Počinjeno_delo .
+              rdfs:subClassOf :Počinjeno_delo ;
+              rdfs:comment "Robbery"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Saučesništvo
 :Saučesništvo rdf:type owl:Class ;
-              rdfs:subClassOf :Element_presude .
+              rdfs:subClassOf :Element_presude ;
+              rdfs:comment "Complicity"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Sitna_Krađa_Utaja_i_Prevara
 :Sitna_Krađa_Utaja_i_Prevara rdf:type owl:Class ;
-                             rdfs:subClassOf :Počinjeno_delo .
+                             rdfs:subClassOf :Počinjeno_delo ;
+                             rdfs:comment "Embezzelment"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Slučaj
@@ -371,12 +431,14 @@
                                                    ]
                                                  ) ;
                               rdf:type owl:Class
-                            ] .
+                            ] ;
+        rdfs:comment "Case"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Stanje_osobe
 :Stanje_osobe rdf:type owl:Class ;
-              rdfs:subClassOf :Element_presude .
+              rdfs:subClassOf :Element_presude ;
+              rdfs:comment "Person's state"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Stav
@@ -385,7 +447,8 @@
                             owl:onProperty :pripada ;
                             owl:someValuesFrom :Član
                           ] ;
-      rdfs:subClassOf :Element_zakona .
+      rdfs:subClassOf :Element_zakona ;
+      rdfs:comment "Paragraph"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Tačka
@@ -394,37 +457,44 @@
                              owl:onProperty :pripada ;
                              owl:someValuesFrom :Stav
                            ] ;
-       rdfs:subClassOf :Element_zakona .
+       rdfs:subClassOf :Element_zakona ;
+       rdfs:comment "Point"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Teška_krađa
 :Teška_krađa rdf:type owl:Class ;
-             rdfs:subClassOf :Počinjeno_delo .
+             rdfs:subClassOf :Počinjeno_delo ;
+             rdfs:comment "Aggravated theft"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Ukradena_stvar
 :Ukradena_stvar rdf:type owl:Class ;
-                rdfs:subClassOf :Element_presude .
+                rdfs:subClassOf :Element_presude ;
+                rdfs:comment "Affected object"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Uništenje_i_oštećenje_tuđe_stvari
 :Uništenje_i_oštećenje_tuđe_stvari rdf:type owl:Class ;
-                                   rdfs:subClassOf :Počinjeno_delo .
+                                   rdfs:subClassOf :Počinjeno_delo ;
+                                   rdfs:comment "Destruction and damage to another's property"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Vozilo
 :Vozilo rdf:type owl:Class ;
-        rdfs:subClassOf :Pokretna_stvar .
+        rdfs:subClassOf :Pokretna_stvar ;
+        rdfs:comment "Vehicle"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Zatvor
 :Zatvor rdf:type owl:Class ;
-        rdfs:subClassOf :Kazna .
+        rdfs:subClassOf :Kazna ;
+        rdfs:comment "Prison punishment"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Zemljište
 :Zemljište rdf:type owl:Class ;
-           rdfs:subClassOf :Nepokretna_stvar .
+           rdfs:subClassOf :Nepokretna_stvar ;
+           rdfs:comment "Land"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Član
@@ -433,7 +503,8 @@
                             owl:onProperty :pripada ;
                             owl:someValuesFrom :Glava
                           ] ;
-      rdfs:subClassOf :Element_zakona .
+      rdfs:subClassOf :Element_zakona ;
+      rdfs:comment "Article"@en .
 
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Član_239
@@ -466,37 +537,44 @@
 
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Žrtva
 :Žrtva rdf:type owl:Class ;
-       rdfs:subClassOf :Osoba .
+       rdfs:subClassOf :Osoba ;
+       rdfs:comment "Victim"@en .
 
 
 ###  http://www.akomantoso.org/ontology/opo#Član_244
 <http://www.akomantoso.org/ontology/opo#Član_244> rdf:type owl:Class ;
-                                                  rdfs:subClassOf :Član .
+                                                  rdfs:subClassOf :Član ;
+                                                  rdfs:comment "Article 244"@en .
 
 
 ###  http://www.akomantoso.org/ontology/opo#Član_246
 <http://www.akomantoso.org/ontology/opo#Član_246> rdf:type owl:Class ;
-                                                  rdfs:subClassOf :Član .
+                                                  rdfs:subClassOf :Član ;
+                                                  rdfs:comment "Article 246"@en .
 
 
 ###  http://www.akomantoso.org/ontology/opo#Član_247
 <http://www.akomantoso.org/ontology/opo#Član_247> rdf:type owl:Class ;
-                                                  rdfs:subClassOf :Član .
+                                                  rdfs:subClassOf :Član ;
+                                                  rdfs:comment "Article 247"@en .
 
 
 ###  http://www.akomantoso.org/ontology/opo#Član_248
 <http://www.akomantoso.org/ontology/opo#Član_248> rdf:type owl:Class ;
-                                                  rdfs:subClassOf :Član .
+                                                  rdfs:subClassOf :Član ;
+                                                  rdfs:comment "Article 248"@en .
 
 
 ###  http://www.akomantoso.org/ontology/opo#Član_253
 <http://www.akomantoso.org/ontology/opo#Član_253> rdf:type owl:Class ;
-                                                  rdfs:subClassOf :Član .
+                                                  rdfs:subClassOf :Član ;
+                                                  rdfs:comment "Article 253"@en .
 
 
 ###  http://www.akomantoso.org/ontology/opo#Član_254
 <http://www.akomantoso.org/ontology/opo#Član_254> rdf:type owl:Class ;
-                                                  rdfs:subClassOf :Član .
+                                                  rdfs:subClassOf :Član ;
+                                                  rdfs:comment "Article 254"@en .
 
 
 #################################################################
@@ -1044,6 +1122,25 @@
 ###  http://informatika.ftn.uns.ac.rs/ontologies/criminal-offences-ontology#Član_254_Stav_2
 :Član_254_Stav_2 rdf:type owl:NamedIndividual ;
                  :pripada :Član_254 .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+:Dugotrajni_zatvor rdfs:comment "Long-term imprisonment"@en .
+
+
+:Član_239 rdfs:comment "Article 239"@en .
+
+
+:Član_240 rdfs:comment "Article 240"@en .
+
+
+:Član_241 rdfs:comment "Article 241"@en .
+
+
+:Član_242 rdfs:comment "Article 242"@en .
 
 
 #################################################################
